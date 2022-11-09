@@ -1,0 +1,196 @@
+.sec9{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.sec9 img{
+    border-radius: 16px;
+    width: 580px;
+}
+
+.location{
+    margin: auto;
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    width: 1180px;
+    justify-self: center;
+    gap: 118px
+}
+
+.location_title_btn{
+    display: flex;
+    width: 482px;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.location_details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+.location_address{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.location_title_btn h3{
+    font-size: 40px;
+    color: #34302E;
+}
+.location_title_btn h4{
+    font-size: 20px;
+    color: #34302E;
+    font-family: 'roboto';
+}
+
+.location_title_btn p{
+    color: #4D4642;
+    font-size: 15px;
+}
+
+
+.location_title_btn a{
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: none;
+    background: #28231F;
+    border-radius: 100px;
+    text-align: center;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.review_link{
+    display: flex;
+    position: relative;
+}
+
+.review_detail_group{
+    display: flex;
+    padding: 12px;
+    flex-direction: column;
+    gap: 12px
+}
+
+.review_card{
+    border: 1px solid #CCBEB8;
+    border-radius: 16px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+.review_details{
+    display: flex;
+    width: 256px;
+    flex-direction: column;
+    gap: 12px
+}
+
+.review_title{
+    font-weight: 700;
+    color: #34302E
+}
+.review_author{
+    color:#4D4642;
+    font-size: 13px;
+}
+.review_star{
+    display: flex;
+    flex-direction: row;
+}
+
+.review_img1 {
+    background:url(../torta_da_te/images/review_img1.png)no-repeat
+}
+.review_img2 {
+    background:url(../torta_da_te/images/review_img2.png)no-repeat
+}
+.review_img3 {
+    background:url(../torta_da_te/images/review_img3.png)no-repeat
+}
+.review_img4 {
+    background:url(../torta_da_te/images/review_img_default.png)no-repeat
+}
+
+.sec11{
+    display: flex;
+    position: relative;
+    margin: 80px 0 0;
+    background: #28231F;
+    align-items: center;
+    gap: 120px;
+    justify-content: center;
+    padding: 64px 0;
+}
+.subscribe_details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subscribe_details h3{
+    width: 480px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.subscribe_details p{
+    width: 480px;
+    font-size: 15px;
+    color:#EEE9E9;
+}
+.subscribe_user{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe_input_group{
+display: flex;
+flex-direction: column;
+gap: 8px;
+align-items: center;
+justify-content: center;
+}
+
+#user_name, #user_email{
+    box-sizing: border-box;
+    width: 480px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid #fff;
+    border-radius: 100px;
+    padding: 16px;
+    background-color: #28231F;
+}
+#user_name, #user_email::placeholder{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+#user_name, #user_email:focus{
+    outline: none;
+}
+
+.subscribe_user button{
+    width: 480px;
+    background-color: #fff;
+    padding: 12px 16px;
+    color: #28231F;
+    border: none;
+    border-radius: 100px;
+    font-size: 20px;
+    font-weight: 700;
+}

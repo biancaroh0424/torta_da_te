@@ -1,0 +1,248 @@
+.section_main,.section_main2,.section_main3{
+    box-sizing: border-box;
+    display: flex;
+    position:relative;
+    margin-top: 104px;
+    padding: 120px 240px;
+    justify-content: flex-start;
+    width: 100%;
+    height: 540px;
+}
+
+.section_main{
+    background: url("../images/main.jpg") center no-repeat;
+}
+
+.section_main2{
+    background: url("../images/main2.jpg") center no-repeat;
+}
+.section_main3{
+    background: url("../images/main3.jpg") center no-repeat;
+}
+
+
+
+
+
+.main_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.textbox{
+    position: relative;
+    max-width: 448px;
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px
+}
+
+.textbox h3{
+    max-width: 448px;
+    width: 100%;
+    font-size: 42px;
+    color: #fff
+}
+
+.textbox p{
+    max-width: 448px;
+    width: 100%;
+    font-size: 20px;
+    color:#EEE9E9
+}
+
+.btn {
+    box-sizing: border-box;
+    background: #28231F;
+    border-radius: 100px;
+    width: 280px;
+    padding: 12px 16px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.slider_dot{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.slider_dot a{
+    width: 20px;
+    text-align: center;
+}
+
+.how_to_order{
+    position: relative;
+    margin: 56px auto 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.how_to_order h3{
+    font-size: 36px;
+    color: #34302E
+}
+
+.how_to_step{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.how_to_detail,.how_to_title_desc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    align-self: stretch;
+}
+
+.how_to_title_desc{
+    gap: 12px;
+}
+.how_to_title_desc h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    height: 52px;
+    font-size: 22px;
+}
+
+
+.sec3{
+    position: relative;
+    width: 100%;
+    background-color: #28231F;
+    height: auto;
+    padding: 56px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.intro_img{
+    margin: auto;
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 56px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro_title_desc_btn{
+    width: 482px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.intro_title_desc_btn h3{
+    font-size: 40px;
+    color: #fff;
+    width: 482px;
+}
+.intro_title_desc_btn p{
+    color: #EEE9E9;
+    width: 482px;
+}
+.intro_title_desc_btn a{
+    color: #eee9e9;
+    border: 2px solid #ccbeb8;
+    border-radius: 100px;
+    font-weight: 700;
+    width: 280px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px
+}
+
+.intro1{
+    border-radius: 16px;
+    width: 580px;
+}
+
+
+.intro_dot{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.intro_dot a{
+    width: 20px;
+    text-align: center;
+}
+
+.sec4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.sec4 img{
+    border-radius: 16px;
+    width: 580px;
+}
+
+.us_img_desc{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1180px;
+    justify-self: center;
+    gap: 118px
+}
+
+.us_title_btn{
+    display: flex;
+    width: 482px;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.us_title_btn h3{
+    font-size: 40px;
+    color: #34302E;
+}
+.us_title_btn p{
+    font-size: 15px;
+    color: #4D4642;
+}
+.us_title_btn a{
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    text-align: center;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #34302E;
+}
+

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../torta_da_te/css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../torta_da_te/css/style_menu_footer.css">
+    <link rel="stylesheet" href="../torta_da_te/css/faq.css">
+    <link rel="stylesheet" href="../torta_da_te/css/1to1qna.css">
+    <link rel="stylesheet" href="../torta_da_te/css/1to1ask.css">
+    <link rel="shortcut icon" href="../torta_da_te/images/logo_favicon.ico" type="image/x-icon">
+    <title>1:1 Q&A</title>
+
+</head>
+<body>
+<!--팝업 메세지 오버레이-->
+    <div class="popup_msg_confirm"  style="display: none">
+        <div class="close_popup"><span class="hide">close</span></div>
+        <div class="popup_msg_ttl_btn_confirm">
+        <div class="popup_confirm_ico"></div>
+        <span>Successfuly deleted!</span>
+        </div>
+    </div>
+
+
+<div class="popup_msg_remove_pd" style="display: none">
+    <div class="close_popup"><span class="hide">close</span></div>
+    <div class="popup_msg_ttl_btn">
+    <span>Are you sure to delete it?</span>
+    <div class="popup_msg_btn_group">
+        <span class="popup_btn_cancel">Cancel</span>
+        <span class="popup_btn_confirm">Confirm</span>
+    </div>
+    </div>
+</div>
+<div class="overlay_popup" style="display:none"></div>
+<!--팝업 메세지 오버레이 끝-->
+
+
+<header id="header">
+    <nav>
+    <h1 class="hide">Torta Da Te</h1>
+
+    <div class="promo_background">
+    <div class="promo_banner">
+        <a href="#">
+    <h3 class="hide">Promotion</h3>
+        <p>SIGNUP TODAY :) GET 30% OFF COUPON! CUSTOMIZE CAKE
+        NOW</p>
+    </a>
+    </div>
+  </div>
+
+  <div class="gnb">
+    <div class="gnb_top">
+    <div class="quickmenu_gnb">
+        <div class="gnb_menu_slider">
+        </div>
+        <div class="search_icon"></div>
+        <div class="logo_sub" style="display:none"></div>
+    </div>
+
+
+    <div class="search_active" style="display:none">
+      <fieldset>
+        <legend class="hide">Search Fully Customizable Cake</legend>
+        <form action="" method="get" name="search_active">
+                <button type="submit" class="nav_search_ico">Search</button>
+                
+                <input type="text" name="search_nav" id="searchNav">
+              </form>
+        </fieldset>
+        
+    </div>
+        <div class="logo_right_menu">
+        <div class="logo_main">
+            <a href="../torta_da_te/index.html"><img src="../torta_da_te/images/logo_main.png"  alt=""></a>
+        </div>
+        <div class="gnb_right">
+        <div class="gnb_business">
+            <h2 class="hide">Business Pages</h2>
+            <ul>
+                <li><a href="../torta_da_te/location.html">Location</a></li>
+                <li><a href="../torta_da_te/about_us.html">About us</a></li>
+                <li><a href="../torta_da_te/faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    
+        <div class="gnb_mypage">
+            <h2 class="hide">Mypage</h2>
+            <ul>
+                <li><a href="../torta_da_te/login.html"><img src="../torta_da_te/images/myaccount.png" alt=""><p class="hide">Login</p></a></li>
+                <li><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.png" alt=""><p class="hide">My Cart</p></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="gnb_sub">
+    <h2 class="hide">Sub Menu</h2>
+    <div class="gnb_sub_area">
+    <ul>
+        <li><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK & COLLECT</a></li>
+        <li><a href="../torta_da_te/product_celebration.html">CELEBRATION</a></li>
+        <li><a href="../torta_da_te/product_vegeterian.html">VEGETERIAN</a></li>
+        <li><a href="../torta_da_te/product_accessories.html">ACCESSORIES</a></li>
+    </ul>
+</div>
+    </div>
+    <div class="gnb_sub2">
+        <h2 class="hide">Sub Menu</h2>
+        <div class="gnb_sub_area">
+        <ul>
+            <li><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK & COLLECT</a></li>
+            <li><a href="../torta_da_te/product_celebration.html">CELEBRATION</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.html">VEGETERIAN</a></li>
+            <li><a href="../torta_da_te/product_accessories.html">ACCESSORIES</a></li>
+        </ul>
+    </div>
+        </div>
+    
+    </div>
+    </nav>
+<!--아이콘클릭시 나오는 슬라이드 메뉴-->
+<div class="slide_menu">
+    <h2 class="hide">OUR PRODUCTS</h2>
+    <h3 class="hide">VIEW DETAILS</h3>
+    <div class="close_nav"><p class="hide">Close menu</p></div>
+    <div class="menu_group">
+        <div class="logo_slide_menu">
+        </div>
+
+        <div class="option">
+        <div class="slide_title_mypage">
+        <div class="user_ico_name">
+        <img src="images/myaccount_logedin.png" alt=""><h4 class="user_name">Jane Doe</h4>
+        </div>
+        <div class="see_more">
+            <p class="hide">See more</p>
+        </div>
+        </div>
+        <ul style="display:none">
+            <li><a href="../torta_da_te/my_cart.html">My Cart</a></li>
+            <li><a href="../torta_da_te/">My Wishlist</a></li>
+            <li><a href="../torta_da_te/">My Order </a></li>
+            <li><a href="../torta_da_te/">Logout</a></li>
+        </ul>
+        </div>
+
+        <h4><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK AND COLLECT</a></h4>
+        <div class="option">
+        <div class="slide_title" id="celebration">
+        <h4>CELEBRATION</h4><div class="see_more">
+            <p class="hide">See more</p>
+        </div>
+        </div>
+        
+        <ul style="display:none">
+            <li><a href="../torta_da_te/product_1hour.html">Birthday</a></li>
+            <li><a href="../torta_da_te/product_1hour.html">Anniversary</a></li>
+            <li><a href="../torta_da_te/product_1hour.html">For Parents</a></li>
+            <li><a href="../torta_da_te/product_1hour.html">For Kids</a></li>
+            <li><a href="../torta_da_te/product_1hour.html">Wedding</a></li>
+        </ul>
+        </div>
+        
+        <div class="option">
+        <div class="slide_title" id="vegeterian">
+        <h4>VEGETERIAN</h4><div class="see_more">
+            <p class="hide">See more</p>
+        </div></div>
+        <ul style="display:none">
+            <li><a href="../torta_da_te/product_vegeterian.html">Birthday</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.html">Anniversary</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.html">For Parents</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.html">For Kids</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.html">Wedding</a></li>
+        </ul>
+        </div>
+        
+        <div class="option">
+        <div class="slide_title" id="accessories">
+        <h4>ACCESSORIES</h4><div class="see_more">
+            <p class="hide">See more</p>
+        </div></div>
+        <ul style="display:none">
+            <li><a href="../torta_da_te/product_accessories.html">Candles</a></li>
+            <li><a href="../torta_da_te/product_accessories.html">Flowers</a></li>
+            <li><a href="../torta_da_te/product_accessories.html">Balloons</a></li>
+            <li><a href="../torta_da_te/product_accessories.html">Drinks</a></li>
+        </ul>
+        </div>
+        <h4><a href=".../torta_da_te/about_us.html">ABOUT US</a></h4>
+        <h4><a href="../torta_da_te/faq.html">FAQ</a></h4>
+        <h4><a href="../torta_da_te/1to1_qna.html">1:1 Q&A</a></h4>
+    
+</div>
+</div>
+
+<div class="overlay" style="display:none"></div>
+
+<!--슬라이드메뉴+오버레이 효과 끝-->
+</header>   
+        
+
+<main id="main">
+
+    
+    <section class="faq_sub_posts">
+        <div class="one_to_one_question">
+            <div class="sub_li">
+                <ul>
+                    <li class="sub_li_active"><a href="../torta_da_te/faq.html">FAQ</a></li>
+                    <li><a href="../torta_da_te/1to1_qna.html">1:1 Q&A</a></li>
+                </ul>
+            </div>
+    
+            
+        <div class="one_to_one">
+            
+        <div class="one_to_one_btn">
+        <div class="one_ask_post">
+            <table class="personal_ask_tble">
+                <thead>
+                    <tr class="one_ask_1st">
+                        <th>Title</th>
+                        <td>Nullam dictum felis eu pede mollis pretium.</td>
+                    </tr>
+                    <tr class="one_ask_1st">
+                        <th>Writer</th>
+                        <td class="one_ask_data1">Jane Kim</td>
+                        <th>Date</th>
+                        <td class="one_ask_data1">04.09.2022</td>
+                    </tr>
+                    <tr class="one_ask_1st">
+                        <th>Question</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="one_ask_1st">
+                        <td class="one_ask_data_desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus??</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="one_ask_1st">
+                        <th>Answer</th>
+                    </tr>
+                    <tr class="one_ask_1st">
+                        <td class="one_ask_data_desc">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue :)</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="ask_q_btn">
+                <div class="ask_q_edit"><span class="edit_ico"></span>Edit</div>
+                <div class="ask_q_edit"><span class="delete_ico"></span>Delete</div>
+            </div>
+        </div>
+        <div class="one_page">
+            <span class="one_go_before"><span class="before_ico"></span>Before</span>
+            <span class="one_go_next">Next<span class="next_ico"></span></span>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+    </section>
+   
+</main>
+
+<footer id="footer">
+    <section class="footer_details">
+        <h2 class="hide">Torta da te General Information</h2>
+    
+    
+        <div class="general_group">
+        <div class="general_contact_info">
+        <h3>CONTACT US</h3>
+        <div class="contact_details">
+        <h4>Address</h4>
+        <address>VIA ALESSANDRO VOLTA LALA 323 HAPPY COUNTRY 11313</address>
+        <h4>Phone</h4>
+        <a href="tel:113-9871-998">113-9871-9981</a>
+        <h4>Email</h4>
+        <a href="mailto:customerservice@buonatortadate.com">customerservice@buonatortadate.com</a>
+        </div>
+        </div>
+        <div class="general_hours">
+            <h3>OPEN HOURS</h3>
+            <div class="hour_details">
+            <h4>Tue - Sun</h4>
+            <p>09:00 - 22:30</p>
+            <h4>Mon</h4>
+            <p>Day off</p>
+            </div>
+            </div>
+        <div class="general_social">
+            <h3>SOCIAL MEDIA</h3>
+            <div class="social_details">
+            <ul>
+                <li><a href="#"><img src="../torta_da_te/images/social_facebook.png" alt=
+                "facebook">/torta_da_te</a></li>
+                <li><a href="#"><img src="../torta_da_te/images/social_insta.png" alt=
+                    "instagram">/torta_da_te</a></li>
+                <li><a href="#"><img src="../torta_da_te/images/social_youtube.png" alt=
+                        "youtube">/torta_da_te</a></li>
+                <li><a href="#"><img src="../torta_da_te/images/social_whatsapp.png" alt=
+                    "whatsapp">/torta_da_te</a></li>
+            </ul>
+            </div>
+            </div>
+            </div>
+            
+    </section>
+    <section class="policy">
+        <h2 class="hide">Torta da Te Policy</h2>
+        <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li>©2022 Torta Da Te All rights reserved</li>
+        </ul>
+    </section>
+    <section class="footer_logo">
+        <h1><a href=""><img src="../torta_da_te/images/logo_main.png" alt="torta_da_te"></a></h1>
+    </section>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="../torta_da_te/js/navbar.js"></script>
+    <script src="../torta_da_te/js/subscribe.js"></script>
+
+    
+
+</body>
+</html>

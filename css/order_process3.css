@@ -1,0 +1,339 @@
+.mycart{
+    position: relative;
+    width: 1180px;
+    display: flex;
+    flex-direction: column;
+    margin: 72px auto 0;
+}
+.mycart > h2{
+    font-size: 40px;
+}
+.product_order_summary_final{
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 56px auto 90px;
+    position: relative;
+}
+
+
+.product_order_preview{
+    margin-top: 24px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px
+}
+
+.preview_pickup_day_time{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    height: 74px;
+    border-bottom: 1px solid #EAD4C9
+}
+.preview_date_time_edit{
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.preview_date_time{
+    display: flex;
+    flex-direction: row;
+    width: 222px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview_date,.preview_time{
+    font-size: 24px;
+    color: #34302E;
+    font-weight: 700;
+}
+
+.preview_details{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 580px;
+}
+.preview_order_cake_ttl{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+.preview_cake_ttl_remove{
+    width: 580px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_detail_preview{
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.preview_cake_ttl{
+    font-size: 18px;
+    font-weight: 700;
+    color: #34302E;
+}
+.remove_product{
+    width: 40px;
+    height: 40px;
+    background: url(../torta_da_te/images/close_nav.png);
+}
+.product_img_m,.product_img_m2,.product_img_m3{
+    width: 180px;
+    height: 158px;
+    border: none;
+    border-radius: 16px;
+}
+
+
+.product_img_m{
+    background: url(../torta_da_te/images/preview_img_m.png);
+}
+.product_img_m2{
+    background:url(../torta_da_te/images/preview_img_m2.png);
+}
+
+.product_img_m3{
+    background:url(../torta_da_te/images/preview_img_m3.png);
+}
+.product_detail_li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checklist_group_preview{
+    width: 380px;
+    height: 66px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.size_m{
+    width: 48px;
+    height: 48px;
+    background: url(../torta_da_te/images/number_m.png);
+}
+
+.message_m{
+    width: 48px;
+    height: 48px;
+    background: url(../torta_da_te/images/process_text_selected.png);
+}
+
+.flavor_m{
+    width: 48px;
+    height: 48px;
+    background: url(../torta_da_te/images/flavor3_img_order_progress.png);
+}
+
+.price_value{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 380px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.title_price{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.value_price{
+    font-weight: 700;
+    font-size: 24px;
+    color: #4D4642
+}
+
+.product_cake_preview,.product_acc_preview{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #EAD4C9;
+}
+
+.preview_acc_ttl_remove{
+    width: 380px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview_order_cake_ttl{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.preview_acc_ttl{
+    font-size: 18px;
+    font-weight: 700;
+    color: #34302E;
+}
+
+.quantity_selector{
+    box-sizing: border-box;
+    padding: 4px 8px;
+    width: 122px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #CCBEB8;
+    border-radius: 100px;
+}
+.subtract_quantity,.add_quantity{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.subtract_quantity{
+    background: url(../torta_da_te/images/subtract.png);
+}
+.add_quantity{
+    background: url(../torta_da_te/images/add_ico.png);
+}
+.quantity_selector_title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 380px;
+    font-size: 15px;
+}
+
+.summary{
+    box-sizing: border-box;
+    position: sticky;
+    top: 132px;
+    width: 380px;
+    height: 340px;
+    padding: 24px 22px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid #EAD4C9;
+    border-radius: 16px;
+}
+
+.summary_subtotal_value_group{
+    width: 340px;
+    box-sizing: border-box;
+    padding: 12px 0;
+    border-bottom: 1px solid #EAD4C9;
+}
+
+.summary_value{
+    width: 340px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.summary_ttl{
+    box-sizing: border-box;
+    width: 340px;
+    height: 56px;
+    padding: 16px 12px;
+    font-size: 20px;
+    color:#34302E;
+    border-bottom: 1px solid #EAD4C9;
+}
+
+.summary_subtotal{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    padding: 8px 12px;
+    gap: 20px;
+}
+
+
+.subtotal_ttl_items{
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.subtotal_title{
+    width: 64px;
+    font-size: 15px;
+}
+
+.subtotal_value_items,.summary_price_total_ttl{
+    font-size: 15px;
+}
+
+.subtotal_price_value{
+    font-weight: 700;
+}
+.summary_total_price{
+    box-sizing: border-box;
+    width: 340px;
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.summary_price_total_ttl{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+}
+.summary_price_total_value{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.summary_checkout_btn{
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 316px;
+    height: 48px;
+    border: none;
+    border-radius: 100px;
+    background: #28231F;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}

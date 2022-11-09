@@ -1,0 +1,245 @@
+
+.login_signup_popup{
+    position: fixed;
+    font-size: 15px;
+    left: 0;
+    right: 0;
+    top: 15%;
+    margin: auto;
+    background-color: #fff;
+    width: 780px;
+    height: 546px;
+    z-index: 9999;
+    border: none;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 48px auto 30px;
+}
+.guest_login_popup{
+    position: relative;
+    width: 684px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+    gap: 62px;
+    align-items: flex-start
+}
+
+.login_signup_btn{
+    box-sizing: border-box;
+    height: 486px;
+    width: 342px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: flex-start;
+}
+
+.nomember_ttl_link h3{
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+.nomember_ttl_link{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.login_signup_ttl_link{
+    font-weight: 700;
+    display: inline-flex;
+    flex-direction: column;
+    text-decoration: underline solid #4D4642;
+}
+
+.continue_guest_btn{
+    cursor: pointer;
+    width: 260px;
+    height: 40px;
+    color: #EEE9E9;
+    background: #28231F;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+}
+
+.login_popup_form{
+    border-left: 1px solid #EAD4C9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 62px;
+}
+
+.login_popup_ttl{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 280px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.popup_subttl{
+    width: 280px;
+    color: #4D4642;
+}
+.popup_form_details{
+    position: relative;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.popup_form_details label{
+    display: flex;
+    flex-direction: column;
+    color:#4D4642;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.popup_input{
+    width: 280px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    border: 2px solid #CCBEB8;
+    border-radius: 100px;
+    outline: none;
+    margin-bottom: 12px;
+}
+.popup_input::placeholder{
+    color:#8D7E73;
+    font-size: 13px;
+}
+
+.login_input::placeholder{
+    color:#8D7E73;
+    font-size: 13px;
+}
+.popup_forgot{
+    width: 280px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 13px;
+    text-decoration: underline #4D4642 solid;
+}
+
+.popup_login_option{
+    margin-top: 12px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.popup_login_btn{
+    cursor: pointer;
+    margin-top: 12px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-weight: 700;
+    background: #28231F;
+    border: none;
+    border-radius: 100px;
+    color: #EEE9E9;
+    font-size: 15px;
+}
+.popup_google_login{
+    box-sizing: border-box;
+    width: 280px;
+    cursor: pointer;
+    margin-top: 4px;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    display: flex;
+    color:#4D4642;
+    flex-direction: row;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 8px;
+}
+
+.google_ico{
+    width: 18px;
+    height: 18px;
+    background: url(../torta_da_te/images/google_ico.png) no-repeat center;
+}
+
+.popup_checkbox_group{
+    display: flex;
+    color:#4D4642;
+    font-size: 13px;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.popup_uncheck,.uncheck{
+    display: flex;
+    height: 20px;
+    align-items: center;
+}
+
+.popup_checkbox_group_signup{
+    display: flex;
+    width: 280px;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.signup_popup_form{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.popup_signup{
+    width: 280px;
+}
+.terms{
+    font-size: 13px;;
+}
+.signup_avail_popup{
+    width: 280px;
+    font-size: 13px;
+}
+.signup_avail_popup li{
+    margin: 0;
+    height: 18px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup_check_ico{
+    width: 14px;
+    height: 14px;
+    background: url(../torta_da_te/images/success_xxxs.png);
+}
+
+.popup_signup_btn{
+    width: 280px;
+    height: 40px;
+    background-color: #A9A29E;
+    color: #EEE9E9;
+    border: none;
+    border-radius: 100px;
+}
+.popup_btn_group{
+    margin-top: 8px;
+}

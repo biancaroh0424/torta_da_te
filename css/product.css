@@ -1,0 +1,159 @@
+#product_main{
+    position:relative;
+    padding-top: 148px;
+}
+
+
+.product_li_filter{
+    display: flex;
+    position: relative;
+    justify-content:center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-bottom: 240px
+}
+
+.product_cele_list{
+    margin-top: 56px;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 24px
+}
+
+.product_title_desc{
+    width: 880px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px
+}
+
+.product_title_desc h3{
+    font-size: 46px;
+    color: #34302E
+}
+
+.product_title_desc p{
+    font-size: 15px;
+    color: #4D4642
+}
+
+.cardlist_col{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filter_details{
+    margin-top: 48px;
+    position: sticky;
+    top: 120px;
+    display: flex;
+    width: 280px;
+}
+
+.filter_details_title{
+    cursor: pointer;
+    width: 280px;
+    height: 56px;
+    display: flex;
+    align-items:center;
+    border-bottom: 1px solid #EEE9E9;
+    font-size: 20px;
+    font-weight: 700;
+    color: #34302E;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.filter_details_title::after{
+    width: 24px;
+    height: 24px;
+    content:url(../torta_da_te/images/arrow_bottom_black_xs.png);
+}
+.input_group{
+    padding: 12px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter_option{
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 12px;
+    gap: 12px;
+    color: #4D4642;
+    font-size: 15px;
+    font-family: 'roboto', serif;
+}
+
+.pagination_arrow{
+    margin: 128px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    height: 28px;
+}
+
+
+.pagination_arrow a{
+    width: 28px;
+    height: 28px;
+}
+.pagination {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.pagination a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 28px;
+    height: 28px;
+}
+
+
+.pagination_active{
+    background: #34302E;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    border: 2px solid #4D4642;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="radio"]{
+    -webkit-appearance: none;
+    border: 2px solid #4D4642;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="checkbox"]:checked{
+    background: url(../torta_da_te/images/checked_checkbox.png)no-repeat center;
+}
+
+input[type="radio"]:checked{
+    background:url(../torta_da_te/images/radio_checked.png)no-repeat center;
+}
+

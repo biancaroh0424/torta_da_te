@@ -1,0 +1,138 @@
+.one_to_one_main_img{
+    width: 100%;
+    height: 200px;
+    background:url(../torta_da_te/images/one_to_one_main.png) top;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.one_to_one_main_img h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.one_to_one_question{
+    width: 1180px;
+    position: relative;
+    display: flex;
+    margin: 56px auto;
+    justify-content: space-between;
+}
+
+.one_to_one{
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+}
+.one_to_one_pagination{
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+    height: 720px;
+    gap: 56px;
+}
+
+.one_to_one_qna{
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+}
+.one_to_one_ttl{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    color: #34302E;
+    font-size: 15px;
+    width: 780px;
+    border-bottom: 2px solid #CCBEB8;
+}
+
+.t_data1,.t_data2,.t_data3,.t_data4,.t_data5,.t_data1_1,.t_data2_1,.t_data3_1,.t_data4_1,.t_data5_1{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.t_data1,.t_data1_1{
+    width: 80px;    
+}
+.t_data2{
+    width: 400px;
+}
+.t_data2_1{
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+}
+.t_data3,.t_data3_1{
+    width:110px;
+}
+.t_data4,.t_data4_1{
+    width: 100px;
+}
+.t_data5,.t_data5_1{
+    width: 90px;
+}
+.one_to_one_details{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 52px;
+    color: #34302E;
+    font-size: 13px;
+    width: 780px;
+    border-bottom: 1px solid #CCBEB8;
+}
+
+.t_data2_ttl{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30px;
+    gap: 10px;
+}
+.t_data2_ttl::before{
+    width: 24px;
+    height: 24px;
+    content: url(../torta_da_te/images/locked.png);
+}
+
+.ask_q_btn{
+    box-sizing: border-box;
+    width: 780px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 0;
+    height: 68px;
+    align-items: center;
+}
+.ask_q{
+    width: 180px;
+    height: 44px;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    color:#34302E;
+    font-weight: 700;
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

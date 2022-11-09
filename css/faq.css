@@ -1,0 +1,194 @@
+
+.faq_main_img{
+    width: 100%;
+    height: 200px;
+    background:url(../torta_da_te/images/faq_main.png) center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq_main_img h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.faq_sub_posts{
+    width: 1180px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.faq_sub_posts2{
+    width: 1180px;
+    position: relative;
+    margin: 56px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.still_q{
+    width: 100%;
+    position: relative;
+    margin: 152px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sub_li{
+    position: sticky;
+    top: 0;
+    width: 280px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub_li ul{
+    width: 280px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub_li li{
+    box-sizing: border-box;
+    width: 280px;
+    display: flex;
+    font-size: 15px;
+}
+
+.sub_li a{
+    padding: 16px;
+    text-align:start;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 52px;
+}
+
+.sub_li_active{
+    font-weight: 700;
+    border-bottom: 2px solid #CCBEB8;
+}
+.sub_li_inactive{
+    border-bottom: 1px solid #CCBEB8;
+}
+.faq_posts{
+    position: relative;
+    width: 780px;    
+}
+.faq_posts_ttl{
+    cursor: pointer;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #4D4642;
+    border-bottom: 1px solid #CCBEB8;
+}
+
+.arrow_more,.arrow_less{
+    width: 24px;
+    height: 24px;
+}
+.arrow_more{
+    background: url(../torta_da_te/images/arrow_xs_top.png);
+}
+
+.arrow_less{
+    background: url(../torta_da_te/images/arrow_xs_bottom.png)
+}
+
+.faq_posts_desc{
+    box-sizing: border-box;
+    font-weight: 700;
+    color: #4D4642;
+    padding: 16px 24px;
+    width: 780px;
+    display: flex;
+    justify-content: flex-start;
+}
+.hide{
+    display: none;
+}
+.still_q_contact{
+    width: 100%;
+    background: #28231F;
+    height:232px;
+    color: #EEE9E9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.still_q_ttl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.still_q_ttl h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+.still_q_ttl p{
+    font-size: 16px;
+    color:#4D4642;
+}
+.still_q_contact a{
+    color: #EEE9E9;
+    font-weight: 700;
+    font-size: 18px;
+}
+.q_contact{
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+
+.one_to_qna{
+    text-decoration: underline 1px solid #eee9e9;
+}
+
+.q_contact_details,.q_cs_email,.q_qna_page{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 420px;
+    gap: 20px;
+    padding: 12px 0;
+}
+.q_contact_ttl{
+    font-size: 15px;
+    width: 80px;
+    color: #EEE9E9;
+}
+.q_cs_number{
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+    gap: 4px;
+}
+.q_cs_date{
+    font-size: 13px;
+    color: #eee9e9;
+}

@@ -1,0 +1,610 @@
+header{
+    flex-direction: column;
+    z-index: -10;
+    width: 100%;
+}
+.mycart_state{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    background-color:#BC521D;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    z-index: 1;
+}
+
+
+.overlay_popup{
+    position: fixed;
+    top:0;
+    width: 100%;  
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4.5px);
+}
+
+.close_popup{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background: url(../torta_da_te/images/close_nav.png);
+}
+
+.popup_confirm_ico{
+    width: 64px;
+    height: 64px;
+    background: url(../torta_da_te/images/popup_confirm.png);
+}
+
+.popup_msg_remove_pd,.popup_msg_confirm{
+position: fixed;
+display: flex;
+left: 0;
+right: 0;
+top: 45%;
+margin: auto;
+z-index: 9999;
+width: 340px;
+height: 166px;
+background-color: #fff;
+border: none;
+border-radius: 16px;
+}
+
+.popup_msg_ttl_btn{
+    width: 296px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px
+}
+
+.popup_msg_ttl_btn_confirm{
+    width: 296px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.popup_msg_btn_group{
+    display: flex;
+    width: 296px;
+    justify-content: space-between;
+}
+
+.popup_btn_confirm{
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #CCBEB8;
+    border-radius: 100px;
+    width: 142px;
+    height: 48px;
+    color: #8D7E73;
+    font-size: 20px;
+    text-align: center;
+}
+
+.popup_btn_cancel{
+    cursor: pointer;
+    background: #28231F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    width: 142px;
+    height: 48px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.promo_background{
+    width: 100%;
+    height: 38px;
+    background-color:#28231F;
+    position: sticky;
+    top:0;
+    transition:top 0.2s;
+}
+
+.promo_banner{
+    display: relative;
+    margin: auto;
+    width: 1180px;
+    height: 38px;
+    background-color:#28231F;
+    border: 1px solid #28231f;
+    box-sizing: border-box;
+    
+}
+
+.promo_banner p{
+    margin: 8px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center
+}
+
+.gnb{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#fff;
+    border-top: 1px solid #fff;
+    position:fixed;
+    top:34;
+    z-index: 1;
+    transition: top 0.2s;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.06));
+}
+
+.fixed_position{
+   position:fixed;
+   top:0;
+   z-index: 1;
+   transition-timing-function: ease-in-out;
+}
+
+.gnb_top{
+    margin: auto;
+    width: 1180px;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+.quickmenu_gnb{
+    align-items: center;
+    display: flex;
+    gap: 6px
+}
+
+
+.quickmenu_gnb,.gnb_menu_slider{
+    cursor: pointer;
+    display:flex;
+    height: 40px
+}
+.gnb_menu_slider{
+    width: 40px;
+    background: url(../torta_da_te/images/menu_nav.png);
+}
+
+.search_icon{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../torta_da_te/images/search_nav.png);
+}
+
+/*서치 시작*/
+
+.search_active{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 0;
+    height: 40px;
+    padding: 0 8px;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+}
+
+.search_active form{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.search_active fieldset{
+    box-sizing: border-box;
+    width: 560px;
+    height: 40px;
+    display: flex;
+   justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.search_active input[type=text]{
+    width: 86%;
+    border: none;
+    height: 32px;
+}
+.search_active input[type=text]:focus{
+    outline: none;
+}
+
+.nav_search_ico{
+    width: 40px;
+    height: 40px;
+    color:transparent;
+    background: url(../torta_da_te/images/search_nav.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.clear_search{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color:transparent;
+    background: url(../torta_da_te/images/close_nav.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.gnb_mypage ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_right_menu{
+    display: flex;
+    gap: 176px
+}
+
+.logo_main{
+    
+    margin: auto
+}
+
+.gnb_right{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.gnb_business ul{
+    display: flex;
+    gap: 24px
+}
+
+.gnb_business,.gnb_mypage{
+    display: flex;
+    flex-direction: row
+}
+.gnb_business li{
+    display: inline-block
+}
+
+.gnb_mypage ul{
+display: inline-flex;
+gap: 4px
+}
+
+.gnb_mypage li{
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+
+.logo_sub{
+    width: 40px;
+    height: 40px;
+    background:url(../torta_da_te/images/logo_s_nav.png);
+}
+
+
+ .gnb_sub{
+    display: flex;
+    width:100%;
+    height: 42px;
+    box-sizing: border-box;
+    border-top: 2px solid #ccbebb;
+    border-bottom: 2px solid #CCBEB8
+}
+
+.gnb_sub_area{
+    box-sizing: border-box;
+    margin: auto;
+    width: 880px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+}
+
+.gnb_sub ul{
+    margin: auto;
+    width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-direction: row;
+}
+.gnb_sub li{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;    
+}
+
+.gnb_sub2{
+    display: none;
+    width:100%;
+    height: 42px;
+    box-sizing: border-box;
+    background: #28231F;
+    
+}
+
+.gnb_sub2 ul{
+    margin: auto;
+    width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    flex-direction: row;
+}
+.gnb_sub2 li a{
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    color: #fff; 
+}
+
+
+/*슬라이드 메뉴 + 오버레이 시작*/
+
+.slide_menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0;
+    position:fixed;
+    z-index: 9999;
+    left: 0px;
+    top: 0;
+    width: 0;
+    height: 1080px;
+    background: #fff;
+    overflow:hidden;
+}
+.menu_group{
+    margin: 40px 56px;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+}
+
+.logo_slide_menu{
+    width: 240px;
+    height:32px;
+    display: flex;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    background: url(../torta_da_te/images/logo_main.png) no-repeat;
+}
+.close_nav{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: url(../torta_da_te/images/close_nav.png);
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 0
+}
+
+.option a{
+    height: 20px;
+    width: 240px;
+}
+
+.option ul,li{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.slide_title{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    box-sizing: border-box;
+    height: 56px;
+    border-bottom: 1px solid #CCBEB8;
+}
+
+.slide_title_mypage{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    box-sizing: border-box;
+    height: 56px;
+    border-bottom: 1px solid #CCBEB8;
+}
+.user_ico_name{
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.see_more{
+    width: 24px;
+    height: 24px;
+    background:url(../torta_da_te/images/accordian_submenu.png);
+}
+
+
+.slide_title a img{
+    position: absolute;
+    right: 0
+}
+
+.slide_menu h4{
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700
+}
+.slide_menu h4 > a{
+    font-family: 'Times New Roman', Times, serif;
+    color:#34302E;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4.5px);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    transition: ease-in-out 0.6s;
+}
+
+
+/*슬라이드 메뉴 + 오버레이 끝*/
+
+/*푸터 시작*/
+footer{
+    border-top: 1px solid #CCBEB8
+}
+.footer_details{
+    width: 1180px;
+    margin: auto;
+    box-sizing: border-box;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    height: 394px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.general_group{
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footer_details h3{
+    color: #34302E;
+    font-size:32px;
+}
+.footer_details h4{
+    color:#34302E;
+    font-weight: 700;
+    font-family: 'roboto',serif;
+}
+
+.footer_details address{
+    color: #4D4642;
+}
+.general_contact_info,.general_hours,.general_social{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 380px;
+}
+.contact_details,.hour_details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social_details ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+
+.social_details a{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.policy{
+    height: 32px;
+    background-color: #28231f;
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.policy ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 80px;
+    align-items: center;
+}
+
+.policy li{
+    color: #fff;
+    width: 220px;
+}
+.policy a{
+    color: #fff;
+    width: 220px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.footer_logo{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

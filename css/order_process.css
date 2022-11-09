@@ -1,0 +1,969 @@
+.pickup_mycard_preview{
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 24px auto;
+    box-sizing: border-box;
+}
+
+.pickup_preview,.mycart_preview{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.pickup_preview h2{
+    font-family: 'roboto', serif;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.pickup_preview_ico_address{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    height: 48px;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.pickup_preview_title_addr{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.pickup_preview_title{
+    font-family: 'roboto', serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4D4642
+}
+.pickup_preview_title_addr p{
+    font-family: 'roboto', serif;
+    font-size: 13px;   
+    color: #4D4642
+}
+
+.card_mycart_preview{
+    width: 280px;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+    border: 1px solid #CCBEB8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.card_mycart_preview a{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+}
+.card_mycart_group{
+    width: 580px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.mycart_preview_title_btn{
+    display: flex;
+    flex-direction: row;
+    width: 580px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.mycart_preview_title_btn a{
+    width: 70px;
+    font-size: 13px;
+    text-align:center;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mycart_preview h2{
+    font-family: 'roboto', serif;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.card_mycart_preview_img1{
+    width: 80px;
+    height: 64px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    box-sizing: border-box;
+    background: url(../torta_da_te/images/card_cart_preview.png) no-repeat;
+}
+.card_mycart_title_desc {
+    width: 200px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:4px;
+    padding: 0 12px;
+}
+.card_mycart_preview span{
+    font-size: 13px;
+    color:#4D4642;
+    font-weight: normal
+}
+.card_mycart_preview p{
+    font-size: 13px;
+    color: #4D4642;
+    font-weight: 700;
+}
+
+.process_title_group{
+    margin: auto;
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+}
+
+.process_title_num{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 58px;
+}
+
+.process_title_num a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 58px;
+}
+.process_title_num h2{
+    display: inline-flex;
+    font-family: 'roboto',serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+.process_title_active_num{
+    display: inline-flex;
+    border: 2px solid #34302E;
+    border-radius: 100px;
+    width: 32px;
+    margin-right: 8px;
+    height: 32px;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.process_title_inactive{
+    color: #A9A29E
+}
+
+.process_title_inactive_num{
+    display: inline-flex;
+    border: 2px solid #A9A29E;
+    border-radius: 100px;
+    width: 32px;
+    margin-right: 8px;
+    height: 32px;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+    color: #A9A29E
+}
+.process_title_bar{
+    position: relative;
+    width: 1180px;
+    margin: auto;
+}
+
+.order_progress{
+    margin: auto;
+    width: 1180px;
+    height: 10px;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    background: #EEE9E9;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.progress_result{
+    width: 1%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-1{
+    width: 4%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-2{
+    width: 8%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-3{
+    width: 16%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-4{
+    width: 32%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result2{
+    width: 48%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result3{
+    width: 64%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+
+
+.process_product_img{
+    position: relative;
+    width: 580px;
+    height: 380px;
+    background:url(../torta_da_te/images/product_img_big.jpg) no-repeat;
+    border: none;
+    border-radius: 16px;
+}
+
+.process_product_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.process_product_detail h3{
+    font-family: 'roboto', serif;
+    color: #34302E;
+    font-size: 24px;
+}
+
+.process_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1180px;
+    margin: auto;
+}
+
+
+
+.process_product_li{
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        align-content:center;
+        gap: 12px;
+}
+
+.image_message_process{
+    cursor: pointer;
+    height: 48px;
+    width: 480px;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.process_product_size{
+    display: flex;
+    border: 2px solid #28231f;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #28231f;
+    font-size: 15px;
+}
+
+.process_product_price{
+    width: 160px;
+    height: 48px;
+    font-weight: 700;
+    color: #28231F;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.inactive{
+    color:#A9A29E
+}
+.image_message_process{
+    display: flex;
+    flex-direction: row;
+}
+
+.process_product_no_select_img1,.process_product_no_select_img2{
+    width: 48px;
+    height: 48px;
+}
+
+
+.process_product_no_select_img1{
+    background: url(../torta_da_te/images/process_no_selection.png)no-repeat;
+}
+.process_product_no_select_img2{
+    background: url(../torta_da_te/images/process_text_selected.png)no-repeat;
+}
+.make_message{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.make_on_message{
+    font-family: 'roboto', serif;
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 480px;
+    height:140px;
+    border: 1px solid #28231F;
+    border-radius: 16px;
+    padding: 24px;
+    color: #34302E;
+    resize: none;
+}
+
+.make_on_message::placeholder{
+ font-size: 15px;
+ color: #A9A29E;
+}
+
+.make_on_message:focus{
+    outline: none;
+}
+
+.make_on_message{
+    font-family: 'roboto', serif;
+    margin-top: 16px;
+    box-sizing: border-box;
+    width: 480px;
+    height:140px;
+    border: 1px solid #28231F;
+    border-radius: 16px;
+    padding: 24px;
+    color: #34302E;
+    resize: none;
+}
+
+.make_on_message::placeholder{
+ font-size: 15px;
+ color: #A9A29E;
+}
+
+.make_on_message:focus{
+    outline: none;
+}
+
+
+
+.process_product_servings{
+    display: inline-flex;
+    width: 252px;
+    padding-left: 16px;
+    display: flex;
+    height: 48px;
+    align-items: center;
+}
+
+
+.inactive_border{
+    display: flex;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid #A9A29E;
+    color: #A9A29E;
+}
+
+.inactive_price{
+    display: inline-flex;
+    width: 200px;
+    padding-left: 16px;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    color: #A9A29E;
+}
+
+.inactive_servings{
+    display: inline-flex;
+    width: 200px;
+    padding-left: 16px;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    color: #A9A29E;
+}
+
+
+.inactive_img{
+    opacity: 0.4;
+}
+
+.process_img_product_size{
+    position: relative;
+    width: 1180px;
+    margin: 56px auto 124px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px
+}
+
+.process_pagination{
+    width: 60px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.process_pagination span{
+    font-weight: 700;
+}
+.pagination_details{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn_process_before{
+    color: #28231F;
+    box-sizing: border-box;
+    min-width: 114px;
+    padding: 0 16px;
+    min-height: 52px;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    gap: 4px
+}
+
+.btn_process{
+    
+    box-sizing: border-box;
+    min-width: 110px;
+    cursor: pointer;
+    color: #EEE9E9;
+    height: 52px;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: #28231F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 16px;
+}
+
+.inactive_btn{
+    box-sizing: border-box;
+    min-width: 110px;
+    cursor: pointer;
+    color: #fff;
+    min-height: 52px;
+    border: none;
+    font-size: 15px;
+    border-radius: 100px;
+    background-color: #A9A29E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 0 16px;
+}
+.pagination_right_btn,.pagination_right_btn2,.pagination_right_btn3,.pagination_right_btn4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination_right_btn{
+    gap: 96px;
+}
+
+.pagination_right_btn2{
+    gap: 62px;
+}
+
+.pagination_right_btn3{
+    gap:42px;
+}
+
+.pagination_right_btn4{
+    gap:42px;
+}
+
+.pagination_btn_1st{
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: row;
+    gap: 106px;
+    margin-top: 112px;
+}
+
+.pagination_btn_2nd{
+    width: 480px;
+    display: flex;
+    margin-top: 112px;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.card_horiz_list_btn{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_horiz_list{
+    display: flex;
+    width: 1180px;
+    position: relative;
+    flex-direction: row;
+    gap: 20px;
+}
+ 
+
+.recommended_prod_ttl h3{
+    position: relative;
+    margin: auto;
+    width: 1180px;
+    font-family: 'roboto', serif;
+    font-size: 24px;
+}
+
+
+
+.card_horiz_ttl_btn{
+    box-sizing: border-box;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.card_horiz{
+    padding-left: 0;
+    width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_horiz_tag_title_price{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_horiz_title{
+    width: 240px;
+    height: 34px;
+    display: flex;
+    align-content: center;
+    font-size: 15px;
+    color: #28231f;
+}
+.card_horiz_price{
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    align-items: center;
+}
+.add_to_bag_btn{
+    cursor: pointer;
+    border: 2px solid #28231F;
+    color: #28231F;
+    font-weight: 700;
+    width: 140px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    gap: 4px
+}
+
+.add_to_bag_btn_active {
+    cursor: pointer;
+    margin: 12px 0 0 12px;
+    padding: 12px;
+    display: flex;
+    width: 164px;
+    height: 44px;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    background-color: #28231F;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    gap: 16px
+}
+
+
+.counter_card_order_btn_active{
+    color: #EEE9E9;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card_horiz_title_tag{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card_horiz_list_btn > a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+}
+
+.card_horiz_product_img1,.card_horiz_product_img2,.card_horiz_product_img3,.card_horiz_product_img4{
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+}
+
+.card_horiz_product_img1{
+    background: url("../torta_da_te/images/card_img19.png");
+}
+
+.card_horiz_product_img2{
+    background: url("../torta_da_te/images/card_img22.png");
+}
+.card_horiz_product_img3{
+    background: url("../torta_da_te/images/card_img20.png");
+}
+.card_horiz_product_img4{
+    background: url("../torta_da_te/images/card_img21.png");
+}
+
+
+
+
+.process_product_size_img1,.process_product_size_img2,.process_product_size_img3{
+    width: 48px;
+    height: 48px;
+}
+
+
+.process_product_size_img1{
+    background: url("../torta_da_te/images/flavor1_img_order_progress.png")no-repeat;
+}
+.process_product_size_img2{
+    background: url("../torta_da_te/images/flavor2_img_order_progress.png")no-repeat;
+}
+.process_product_size_img3{
+    background: url("../torta_da_te/images/flavor3_img_order_progress.png") no-repeat;
+}
+
+
+.card_horiz_list_btn{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_horiz_list{
+    display: flex;
+    width: 1180px;
+    position: relative;
+    flex-direction: row;
+    gap: 20px;
+}
+ 
+
+.card_horiz_img_btn_wish{
+    position: relative;
+    width: auto !important;
+}
+
+.horiz_wish{
+    cursor: pointer;
+    position: absolute;
+    width:44px;
+    height: 44px;
+    left: 0;
+    right: 304px;
+    background: url("../torta_da_te/images/wishlist.png");
+}
+
+.horiz_wish_added{
+    cursor: pointer;
+    position: absolute;
+    width:44px;
+    height: 44px;
+    left: 0;
+    right: 304px;
+    background: url("../torta_da_te/images/wishlist_added.png");
+}
+
+
+.card_horiz_img_btn{
+    width: 440px;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 1px solid #CCBEB8;
+    border-radius: 16px;
+}
+
+.card_horiz_ttl_btn{
+    box-sizing: border-box;
+height: 180px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 8px;
+}
+
+.card_horiz{
+    padding-left: 0;
+    width: 240px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card_horiz_tag_title_price{
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_horiz_title{
+    width: 240px;
+    height: 34px;
+    display: flex;
+    align-content: center;
+    font-size: 15px;
+    color: #28231f;
+}
+
+
+.card_horiz_title_tag{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card_horiz_list_btn > a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+}
+
+.card_horiz_product_img1,.card_horiz_product_img2,.card_horiz_product_img3,.card_horiz_product_img4{
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+}
+
+.card_horiz_product_img1{
+    background: url("../torta_da_te/images/card_img19.png");
+}
+
+.card_horiz_product_img2{
+    background: url("../torta_da_te/images/card_img22.png");
+}
+.card_horiz_product_img3{
+    background: url("../torta_da_te/images/card_img20.png");
+}
+.card_horiz_product_img4{
+    background: url("../torta_da_te/images/card_img21.png");
+}
+
+
+
+.btn_process_date{
+    color: #EEE9E9;
+    min-width: 144px;
+    height: 48px;
+    border: none;
+    border-radius: 100px;
+    background-color: #28231F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
+}
+
+
+.progress_result{
+    width: 1%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-1{
+    width: 4%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-2{
+    width: 8%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-3{
+    width: 16%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result1-4{
+    width: 32%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result2{
+    width: 48%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+
+.progress_result3{
+    width: 64%;
+    height:100%;
+    background:#D87B54;
+    border: none;
+    border-radius: 100px;
+}
+.phone_message_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.error_message{
+    display: flex;
+    align-items:center;
+    width: 340px;
+    font-size: 13px;
+    color:#C53F3F;
+    font-weight: 700;
+}

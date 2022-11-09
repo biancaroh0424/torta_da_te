@@ -1,0 +1,256 @@
+.login,.signup{
+    width: 1180px;
+    margin: auto;
+    position: relative;
+}
+.login_section,.signup_section{
+    position: relative;
+    width: 340px;
+    margin: 80px auto;
+}
+
+.signup_form fieldset{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_details{
+    position: relative;
+    justify-content: center;
+    width: 340px;
+    margin-top: 24px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.form_details label{
+    display: flex;
+    flex-direction: column;
+    color:#4D4642;
+    font-size: 13px;
+}
+
+.login_ttl{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 340px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.login_input,.signup_input_id,.pw_input_ico{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 338px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 2px solid #CCBEB8;
+    border-radius: 100px;
+}
+
+.signup_input_pw,.login_input_pw{
+    box-sizing: border-box;
+    width: 260px;
+    height: 30px;
+    border: none;
+}
+.signup_input_pw:focus{
+    outline: none;
+}
+
+.signup_input_id:focus{
+    outline: none;
+}
+.login_input_pw:focus{
+    outline: none;
+}
+.pw_noshow{
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../torta_da_te/images/noshow_pw.png);
+}
+
+.pw_show{
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: url(../torta_da_te/images/show_pw.png);
+}
+
+
+
+.login_subttl,.signup_subttl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 340px;
+    color: #4D4642;
+    font-size: 15px;
+}
+
+.signup_subttl a{
+    text-decoration: underline #28231F;
+    font-weight: 700;
+}
+
+.login_option{
+    margin-top: 12px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    justify-content: center;
+}
+
+.login_forgot{
+    width: 340px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    font-size: 13px;
+    text-decoration: underline #4D4642 solid;
+}
+
+
+.login_btn{
+    cursor: pointer;
+    margin-top: 12px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-weight: 700;
+    background: #28231F;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.google_login{
+    box-sizing: border-box;
+    width: 338px;
+    cursor: pointer;
+    margin-top: 4px;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    display: flex;
+    color:#4D4642;
+    flex-direction: row;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 8px;
+}
+
+.checkbox_group{
+    display: flex;
+    color:#4D4642;
+    font-size: 13px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+}
+.checkbox_group_login{
+    display: flex;
+    color:#4D4642;
+    font-size: 13px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+
+.popup_checkbox_group_signup{
+    display: flex;
+    width: 340px;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.signup_popup_form{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.terms{
+    font-size: 13px;
+}
+
+
+.signup_avail{
+    margin: 12px 0;
+    width: 340px;
+    font-size: 13px;
+}
+.signup_avail_li{
+    margin: 0;
+    height: 18px;
+    width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.signup_btn{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 338px;
+    height: 40px;
+    background-color: #28231F;
+    color: #EEE9E9;
+    border: none;
+    border-radius: 100px;
+}
+.popup_btn_group{
+    margin-top: 8px;
+}
+
+.error_message{
+    display: flex;
+    align-items:center;
+    width: 340px;
+    font-size: 13px;
+    color:#C53F3F;
+    font-weight: 700;
+}
+
+.valid {
+    display: flex;
+    color: green;
+    height: 18px;
+    flex-direction: row;
+    width: 338px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valid::after{
+    content:url(../torta_da_te/images/success_xxxs.png);
+}

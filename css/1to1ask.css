@@ -1,0 +1,120 @@
+.one_to_one_question{
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    margin: 80px auto;
+    gap: 120px;
+}
+.one_to_one{
+    margin: auto;
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one_to_one_btn{
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+}
+.one_ask_post{
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+}
+.personal_ask_tble{
+    font-size: 15px;
+    color:#4D4642;
+}
+.personal_ask_tble tr{
+    border-bottom: 1px solid #CCBEB8;
+}
+
+.one_ask_1st{
+display: flex;
+flex-direction: row;
+width: 780px;
+gap: 20px;
+align-items: center;
+justify-content: flex-start
+}
+.one_ask_data1{
+    width: 180px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.personal_ask_tble th{
+    width: 80px;
+    height: 52px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.one_ask_data_desc{
+    width: 780px;
+    padding: 24px 12px;
+    min-height: 240px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ask_q_edit{
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 96px;
+    height: 52px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 13px;
+    color: #34302E;
+    padding: 24px 12px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px;
+}
+.edit_ico,.delete_ico{
+    width: 24px;
+    height: 24px;
+}
+
+.edit_ico{
+    background: url(../torta_da_te/images/edit_ico.png);
+}
+
+.delete_ico{
+    background: url(../torta_da_te/images/delete_ico.png);
+}
+.one_page{
+    box-sizing: border-box;
+    width: 780px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.one_go_before,.one_go_next{
+    cursor: pointer;
+    border: 2px solid #28231F;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 110px;
+    height: 48px;
+}
+.before_ico,.next_ico{
+    width: 24px;
+    height: 24px;
+}
+.before_ico{
+    background: url(../torta_da_te/images/arrow_xs_left.png);
+}
+.next_ico{
+    background: url(../torta_da_te/images/arrow_xs_right.png);
+}

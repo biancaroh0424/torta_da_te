@@ -1,0 +1,399 @@
+.orderlist_date_time_picker{
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    position: relative;
+    margin: 0 auto 124px;
+} 
+
+
+.orderlist_date_time_group{
+    display: flex;
+    width: 1180px;
+    margin: 56px auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.order_product_title_price{
+    width: 350px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+.timepicker_title{
+    width: 310px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+.tile_title_slot{
+    width: 348px;
+    height: 352px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timepicker_title span{
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.time_slot_group{
+    margin-top: 32px;
+    display: flex;
+    width: 340px;
+    height: 304px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.time_slot{
+    width: 116px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time_details{
+    cursor: pointer;
+    font-size: 15px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.time_active {
+    cursor: pointer;
+    font-size: 15px;
+    color: #EEE9E9;
+    background: #28231F;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    
+}
+
+.time_inactive {
+    cursor: pointer;
+    font-size: 15px;
+    color: #28231F;
+    background: transparent;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100px;
+    
+}
+
+.order_product_title_price h3{
+    font-family: 'roboto', serif;
+    font-size: 18px;
+    display: flex;
+}
+
+.order_product_title{
+    display: flex;
+    width: 280px;
+}
+
+.order_product_preview{
+    width: 80px;
+    height: 80px;
+    background: url("../torta_da_te/images/card_img_xxs.png") center;
+    border:none;
+    border-radius: 4px;
+}
+
+.typeof_cake_name{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 250px;
+    padding: 0 4px;
+}
+.typeof{
+    font-size: 13px;
+}
+
+.cake_name{
+    font-size: 15px;
+    font-weight: 700;
+    color:#34302E;
+}
+
+.order_product_typeof_name{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.orderlist_title_photo{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.checklist_group{
+    cursor:pointer;
+    width: 354px;
+    height: 48px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.time_title_slot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 348px;
+    height: 352px;
+    align-items: center;
+}
+
+.orderlist_details{
+    box-sizing: border-box;
+    color:#34302E;
+    width: 380px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #CCBEB8;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.time_picker{
+    box-sizing: border-box;
+    color:#34302E;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #CCBEB8;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+
+
+.orderlist_details ul{
+    margin: 0;
+    padding: 0;
+}
+
+.order_list_value{
+    display: flex;
+}
+
+.orderlist_details li{
+    color:#34302E;
+    width: 350px;
+    display: flex;
+    gap: 8px
+}
+
+
+.checklist{
+    width: 20px;
+    height: 20px;
+    background: url("../torta_da_te/images/ico_checked.png");
+}
+.size_xxs{
+    width: 34px;
+    height: 34px;
+    background: url("../torta_da_te/images/size_xxs.png");
+}
+
+.flavor_xs{
+    width: 34px;
+    height: 34px;
+    background: url("../torta_da_te/images/flavor_mix_xxs.png");
+}
+
+.message_xs{
+    width: 34px;
+    height: 34px;
+    background: url("../torta_da_te/images/message_xs.png");
+}
+.checked_edit{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: 62px;
+    gap: 4px;
+    align-items: center;
+}
+
+.order_list_para_box{
+    width: 256px;
+    padding: 4px 16px;
+    display: block;
+    height: 34px;
+    gap: 16px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.order_list_detail{
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
+.order_list_para_title{
+    font-size: 13px;
+    width: 54px;
+}
+
+.month_year_picker_more{
+    width: 348px;
+    display: flex;
+    height: 48px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.next_month{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url("../torta_da_te/images/arrow_xs_right.png");
+}
+
+.month_year_picker{
+    padding: 12px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.previous_month{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background: url("../torta_da_te/images/arrow_xs_left.png");
+}
+.month{
+    width: 98px;
+    display: flex;
+    height: 24px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.month_year_more{
+    width: 24px;
+    height: 24px;
+    background: url("../torta_da_te/images/arrow_bottom_black_xs.png")
+}
+
+.year {
+    width: 62px;
+    display: flex;
+    height: 24px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.month,.year span{
+    font-size: 16px;
+    color: #4d4642;
+    font-weight: 700;
+}
+.month_days{
+    width: 348px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.month_days_sub{
+    box-sizing: border-box;
+    width: 348px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #CCBEB8;
+}
+
+.month_details{
+    box-sizing: border-box;
+    width: 348px;
+    padding: 12px;
+}
+
+.month_day{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.month_day_active{
+    width: 32px;
+    height: 32px;
+    font-weight: 700;
+    color: #EEE9E9;
+    background: #28231F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 100px;
+}
+
+.month_week{
+    padding: 12px;
+    width: 348px;
+    display: flex
+}
+
+.disabled{
+    color: #A9A29E;
+}
+
+.date_time_picker_btn_g{
+    margin: auto;
+    width: 380px;
+    display:flex;
+    align-content: center;
+    justify-content: space-between;
+}
