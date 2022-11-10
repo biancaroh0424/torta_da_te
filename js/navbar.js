@@ -40,19 +40,19 @@ $(navInput).blur(function(){
     $(subLogo).css("display","none");
 });
 
-$('.slide_title_mypage').click(function(){
-    $('.option > ul:first').slideToggle(60).css('display','flex');
+$("#logged_in_mypage").click(function(){
+    $('#user_menu').slideToggle(60).css('display','flex');
 });
 
 $('#celebration').click(function(){
-    $('.option > ul:eq(1)').slideToggle(60).css('display','flex');
+    $('#celebration_menu').slideToggle(60).css('display','flex');
 });
 $('#vegeterian').click(function(){
-    $('.option > ul:eq(2)').slideToggle(60).css('display','flex');
+    $('#vegeterian_menu').slideToggle(60).css('display','flex');
 });
 
 $('#accessories').click(function(){
-    $('.option > ul:eq(3)').slideToggle(60).css('display','flex');
+    $('#accessories_menu').slideToggle(60).css('display','flex');
 });
 
 var openSlideIco = $('.gnb_menu_slider');
