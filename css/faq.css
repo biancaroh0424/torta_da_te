@@ -2,7 +2,7 @@
 .faq_main_img{
     width: 100%;
     height: 200px;
-    background:url(../torta_da_te/images/faq_main.png) center;
+    background:url("../images/faq_main.png") center;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -108,11 +108,11 @@
     height: 24px;
 }
 .arrow_more{
-    background: url(../torta_da_te/images/arrow_xs_top.png);
+    background: url("../images/arrow_xs_top.png");
 }
 
 .arrow_less{
-    background: url(../torta_da_te/images/arrow_xs_bottom.png)
+    background: url("../images/arrow_xs_bottom.png")
 }
 
 .faq_posts_desc{

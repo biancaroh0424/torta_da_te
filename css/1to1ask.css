@@ -82,11 +82,11 @@ justify-content: flex-start
 }
 
 .edit_ico{
-    background: url(../torta_da_te/images/edit_ico.png);
+    background: url("../images/edit_ico.png");
 }
 
 .delete_ico{
-    background: url(../torta_da_te/images/delete_ico.png);
+    background: url("../images/delete_ico.png");
 }
 .one_page{
     box-sizing: border-box;
@@ -113,8 +113,8 @@ justify-content: flex-start
     height: 24px;
 }
 .before_ico{
-    background: url(../torta_da_te/images/arrow_xs_left.png);
+    background: url("../images/arrow_xs_left.png");
 }
 .next_ico{
-    background: url(../torta_da_te/images/arrow_xs_right.png);
+    background: url("../images/arrow_xs_right.png");
 }

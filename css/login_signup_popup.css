@@ -174,7 +174,7 @@
 .google_ico{
     width: 18px;
     height: 18px;
-    background: url(../torta_da_te/images/google_ico.png) no-repeat center;
+    background: url("../images/google_ico.png") no-repeat center;
 }
 
 .popup_checkbox_group{
@@ -229,7 +229,7 @@
 .signup_check_ico{
     width: 14px;
     height: 14px;
-    background: url(../torta_da_te/images/success_xxxs.png);
+    background: url("../images/success_xxxs.png");
 }
 
 .popup_signup_btn{

@@ -1,3 +1,7 @@
+#email_login:focus{
+outline: none;
+}
+
 .login,.signup{
     width: 1180px;
     margin: auto;
@@ -9,6 +13,17 @@
     margin: 80px auto;
 }
 
+.google_ico{
+    width: 18px;
+    height: 18px;
+    background: url("../images/google_ico.png") no-repeat center;
+}
+
+.login_signup_dbl_ttl{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .signup_form fieldset{
     width: 340px;
     display: flex;
@@ -21,6 +36,7 @@
     position: relative;
     justify-content: center;
     width: 340px;
+    height: 178px;
     margin-top: 24px;
     display: flex;
     gap: 8px;
@@ -80,7 +96,7 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/noshow_pw.png);
+    background: url("../images/noshow_pw.png");
 }
 
 .pw_show{
@@ -90,10 +106,18 @@
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/show_pw.png);
+    background: url("../images/show_pw.png");
 }
 
-
+.signup_ttl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 340px;
+    color: #4D4642;
+    font-size: 15px;
+}
 
 .login_subttl,.signup_subttl{
     display: flex;
@@ -102,7 +126,7 @@
     text-align: center;
     width: 340px;
     color: #4D4642;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .signup_subttl a{
@@ -252,5 +276,5 @@
 }
 
 .valid::after{
-    content:url(../torta_da_te/images/success_xxxs.png);
+    content:url("../images/success_xxxs.png");
 }

@@ -1,7 +1,7 @@
 .about_us_img{
     width: 100%;
     height: 200px;
-    background:url(../torta_da_te/images/about_us_detail.png) center;
+    background:url("../images/about_us_detail.png") center;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -64,7 +64,7 @@
 .location_img{
     width: 100%;
     height: 200px;
-    background:url(../torta_da_te/images/location_detail.png) center;
+    background:url("../images/location_detail.png") center;
     display: flex;
     flex-direction: column;
     margin: auto;

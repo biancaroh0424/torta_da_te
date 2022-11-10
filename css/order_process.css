@@ -113,7 +113,7 @@
     border: none;
     border-radius: 8px 0 0 8px;
     box-sizing: border-box;
-    background: url(../torta_da_te/images/card_cart_preview.png) no-repeat;
+    background: url("../images/card_cart_preview.png") no-repeat;
 }
 .card_mycart_title_desc {
     width: 200px;
@@ -276,7 +276,7 @@
     position: relative;
     width: 580px;
     height: 380px;
-    background:url(../torta_da_te/images/product_img_big.jpg) no-repeat;
+    background:url("../images/product_img_big.jpg") no-repeat;
     border: none;
     border-radius: 16px;
 }
@@ -366,10 +366,10 @@
 
 
 .process_product_no_select_img1{
-    background: url(../torta_da_te/images/process_no_selection.png)no-repeat;
+    background: url("../images/process_no_selection.png")no-repeat;
 }
 .process_product_no_select_img2{
-    background: url(../torta_da_te/images/process_text_selected.png)no-repeat;
+    background: url("../images/process_text_selected.png")no-repeat;
 }
 .make_message{
     display: flex;
@@ -726,17 +726,17 @@
 }
 
 .card_horiz_product_img1{
-    background: url("../torta_da_te/images/card_img19.png");
+    background: url("../images/card_img19.png");
 }
 
 .card_horiz_product_img2{
-    background: url("../torta_da_te/images/card_img22.png");
+    background: url("../images/card_img22.png");
 }
 .card_horiz_product_img3{
-    background: url("../torta_da_te/images/card_img20.png");
+    background: url("../images/card_img20.png");
 }
 .card_horiz_product_img4{
-    background: url("../torta_da_te/images/card_img21.png");
+    background: url("../images/card_img21.png");
 }
 
 
@@ -749,13 +749,13 @@
 
 
 .process_product_size_img1{
-    background: url("../torta_da_te/images/flavor1_img_order_progress.png")no-repeat;
+    background: url("../images/flavor1_img_order_progress.png")no-repeat;
 }
 .process_product_size_img2{
-    background: url("../torta_da_te/images/flavor2_img_order_progress.png")no-repeat;
+    background: url("../images/flavor2_img_order_progress.png")no-repeat;
 }
 .process_product_size_img3{
-    background: url("../torta_da_te/images/flavor3_img_order_progress.png") no-repeat;
+    background: url("../images/flavor3_img_order_progress.png") no-repeat;
 }
 
 
@@ -790,7 +790,7 @@
     height: 44px;
     left: 0;
     right: 304px;
-    background: url("../torta_da_te/images/wishlist.png");
+    background: url("../images/wishlist.png");
 }
 
 .horiz_wish_added{
@@ -800,7 +800,7 @@
     height: 44px;
     left: 0;
     right: 304px;
-    background: url("../torta_da_te/images/wishlist_added.png");
+    background: url("../images/wishlist_added.png");
 }
 
 
@@ -870,17 +870,17 @@ gap: 8px;
 }
 
 .card_horiz_product_img1{
-    background: url("../torta_da_te/images/card_img19.png");
+    background: url("../images/card_img19.png");
 }
 
 .card_horiz_product_img2{
-    background: url("../torta_da_te/images/card_img22.png");
+    background: url("../images/card_img22.png");
 }
 .card_horiz_product_img3{
-    background: url("../torta_da_te/images/card_img20.png");
+    background: url("../images/card_img20.png");
 }
 .card_horiz_product_img4{
-    background: url("../torta_da_te/images/card_img21.png");
+    background: url("../images/card_img21.png");
 }
 
 

@@ -25,7 +25,7 @@
 .back_ico{
     width: 24px;
     height: 24px;
-    background: url(../torta_da_te/images/arrow_xs_left.png);
+    background: url("../images/arrow_xs_left.png");
 }
 
 .order_confirm_ico,.order_error_ico{
@@ -33,11 +33,11 @@
     height: 64px;
 }
 .order_confirm_ico{
-    background: url(../torta_da_te/images/popup_confirm.png);
+    background: url("../images/popup_confirm.png");
 }
 
 .order_error_ico{
-    background: url(../torta_da_te/images/error_ico.png);
+    background: url("../images/error_ico.png");
 }
 .confirm_ttl_msg_date{
     display: flex;
@@ -112,7 +112,7 @@
 .continue_ico{
     width: 24px;
     height: 24px;
-    background: url(../torta_da_te/images/arrow_xs_white.png);
+    background: url(../images/arrow_xs_white.png);
 }
 .confirm_contact{
     margin: 120px auto;

@@ -119,7 +119,7 @@
 .order_product_preview{
     width: 80px;
     height: 80px;
-    background: url("../torta_da_te/images/card_img_xxs.png") center;
+    background: url("../images/card_img_xxs.png") center;
     border:none;
     border-radius: 4px;
 }
@@ -223,24 +223,24 @@
 .checklist{
     width: 20px;
     height: 20px;
-    background: url("../torta_da_te/images/ico_checked.png");
+    background: url("../images/ico_checked.png");
 }
 .size_xxs{
     width: 34px;
     height: 34px;
-    background: url("../torta_da_te/images/size_xxs.png");
+    background: url("../images/size_xxs.png");
 }
 
 .flavor_xs{
     width: 34px;
     height: 34px;
-    background: url("../torta_da_te/images/flavor_mix_xxs.png");
+    background: url("../images/flavor_mix_xxs.png");
 }
 
 .message_xs{
     width: 34px;
     height: 34px;
-    background: url("../torta_da_te/images/message_xs.png");
+    background: url("../images/message_xs.png");
 }
 .checked_edit{
     cursor: pointer;
@@ -288,7 +288,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    background: url("../torta_da_te/images/arrow_xs_right.png");
+    background: url("../images/arrow_xs_right.png");
 }
 
 .month_year_picker{
@@ -304,7 +304,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    background: url("../torta_da_te/images/arrow_xs_left.png");
+    background: url("../images/arrow_xs_left.png");
 }
 .month{
     width: 98px;
@@ -319,7 +319,7 @@
 .month_year_more{
     width: 24px;
     height: 24px;
-    background: url("../torta_da_te/images/arrow_bottom_black_xs.png")
+    background: url("../images/arrow_bottom_black_xs.png")
 }
 
 .year {

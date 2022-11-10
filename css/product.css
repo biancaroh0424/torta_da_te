@@ -74,7 +74,7 @@
 .filter_details_title::after{
     width: 24px;
     height: 24px;
-    content:url(../torta_da_te/images/arrow_bottom_black_xs.png);
+    content:url("../images/arrow_bottom_black_xs.png");
 }
 .input_group{
     padding: 12px 0px;
@@ -150,10 +150,10 @@ input[type="radio"]{
 }
 
 input[type="checkbox"]:checked{
-    background: url(../torta_da_te/images/checked_checkbox.png)no-repeat center;
+    background: url("../images/checked_checkbox.png")no-repeat center;
 }
 
 input[type="radio"]:checked{
-    background:url(../torta_da_te/images/radio_checked.png)no-repeat center;
+    background:url("../images/radio_checked.png")no-repeat center;
 }
 

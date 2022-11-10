@@ -200,7 +200,7 @@
     right: 4px;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/wishlist.png);
+    background: url("../images/wishlist.png");
 }
 .wishlist_added{
     cursor: pointer;
@@ -209,7 +209,7 @@
     right: 4px;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/wishlist_added.png);
+    background: url("../images/wishlist_added.png");
 }
 
 
@@ -251,99 +251,99 @@
 }
 
 .card_img1 {
-    background: url(../torta_da_te/images/card_img5.jpg) no-repeat
+    background: url("../images/card_img5.jpg") no-repeat
 }
 
 .card_img2 {
-    background: url(../torta_da_te/images/card_img2.jpg)no-repeat
+    background: url("../images/card_img2.jpg")no-repeat
 }
 
 .card_img3 {
-    background: url(../torta_da_te/images/card_img3.jpg)no-repeat
+    background: url("../images/card_img3.jpg")no-repeat
 }
 
 .card_img4 {
-    background: url(../torta_da_te/images/card_img4.jpg)no-repeat
+    background: url("../images/card_img4.jpg")no-repeat
 }
 
 .card_img5 {
-    background: url(../torta_da_te/images/card_img5.jpg)no-repeat
+    background: url("../images/card_img5.jpg")no-repeat
 }
 
 .card_img6 {
-    background: url(../torta_da_te/images/card_img15.png)no-repeat
+    background: url("../images/card_img15.png")no-repeat
 }
 
 .card_img7 {
-    background: url(../torta_da_te/images/card_img7.png)no-repeat
+    background: url("../images/card_img7.png")no-repeat
 }
 
 .card_img8 {
-    background:url(../torta_da_te/images/card_img8.png)no-repeat
+    background:url("../images/card_img8.png")no-repeat
 }
 
 .card_img9 {
-    background:url(../torta_da_te/images/card_img9.png)no-repeat
+    background:url("../images/card_img9.png")no-repeat
 }
 
 .card_img10 {
-    background:url(../torta_da_te/images/card_img10.png)no-repeat
+    background:url("../images/card_img10.png")no-repeat
 }
 
 .card_img11 {
-    background:url(../torta_da_te/images/card_img11.png)no-repeat
+    background:url("../images/card_img11.png")no-repeat
 }
 
 .card_img12 {
-    background:url(../torta_da_te/images/card_img16.png)no-repeat
+    background:url("../images/card_img16.png")no-repeat
 }
 
 .card_img13{
-    background:url(../torta_da_te/images/card_img13.png)no-repeat
+    background:url("../images/card_img13.png")no-repeat
 } 
 
 .card_img14 {
-    background:url(../torta_da_te/images/card_img14.png)no-repeat
+    background:url("../images/card_img14.png")no-repeat
 }
 
 .card_img15 {
-    background:url(../torta_da_te/images/card_img15.png)no-repeat
+    background:url("../images/card_img15.png")no-repeat
 }
 
 .card_img16 {
-    background:url(../torta_da_te/images/card_img16.png)no-repeat
+    background:url("../images/card_img16.png")no-repeat
 }
 
 .card_img17 {
-    background:url(../torta_da_te/images/card_img17.png)no-repeat
+    background:url("../images/card_img17.png")no-repeat
 }
 
 .card_img18 {
-    background:url(../torta_da_te/images/card_img4.png)no-repeat
+    background:url("../images/card_img4.png")no-repeat
 }
 
 .card_img19 {
-    background:url(../torta_da_te/images/card_img19.png)no-repeat
+    background:url("../images/card_img19.png")no-repeat
 }
 
 .card_img20 {
-    background:url(../torta_da_te/images/card_img20.png)no-repeat
+    background:url("../images/card_img20.png")no-repeat
 }
 
 .card_img21 {
-    background:url(../torta_da_te/images/card_img21.png)no-repeat
+    background:url("../images/card_img21.png")no-repeat
 }
 
 .card_img22 {
-    background:url(../torta_da_te/images/card_img22.png)no-repeat
+    background:url("../images/card_img22.png")no-repeat
 }
 
 .card_img23 {
-    background:url(../torta_da_te/images/card_img23.png)no-repeat
+    background:url("../images/card_img23.png")no-repeat
 }
 
 .card_img24 {
-    background:url(../torta_da_te/images/card_img3.png)no-repeat
+    background:url("../images/card_img3.png")no-repeat
 }
 
 

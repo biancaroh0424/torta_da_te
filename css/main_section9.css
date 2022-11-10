@@ -108,16 +108,16 @@
 }
 
 .review_img1 {
-    background:url(../torta_da_te/images/review_img1.png)no-repeat
+    background:url("../images/review_img1.png")no-repeat
 }
 .review_img2 {
-    background:url(../torta_da_te/images/review_img2.png)no-repeat
+    background:url("../images/review_img2.png")no-repeat
 }
 .review_img3 {
-    background:url(../torta_da_te/images/review_img3.png)no-repeat
+    background:url("../images/review_img3.png")no-repeat
 }
 .review_img4 {
-    background:url(../torta_da_te/images/review_img_default.png)no-repeat
+    background:url("../images/review_img_default.png")no-repeat
 }
 
 .sec11{

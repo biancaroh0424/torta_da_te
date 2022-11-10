@@ -1,7 +1,7 @@
 .one_to_one_main_img{
     width: 100%;
     height: 200px;
-    background:url(../torta_da_te/images/one_to_one_main.png) top;
+    background:url("../images/one_to_one_main.png") top;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -110,7 +110,7 @@
 .t_data2_ttl::before{
     width: 24px;
     height: 24px;
-    content: url(../torta_da_te/images/locked.png);
+    content: url("/images/locked.png");
 }
 
 .ask_q_btn{

@@ -3,6 +3,7 @@ header{
     z-index: -10;
     width: 100%;
 }
+
 .mycart_state{
     width: 20px;
     height: 20px;
@@ -28,6 +29,7 @@ header{
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4.5px);
+    z-index: 999;
 }
 
 .close_popup{
@@ -38,13 +40,13 @@ header{
     width: 40px;
     height: 40px;
     display: flex;
-    background: url(../torta_da_te/images/close_nav.png);
+    background: url("../images/close_nav.png");
 }
 
 .popup_confirm_ico{
     width: 64px;
     height: 64px;
-    background: url(../torta_da_te/images/popup_confirm.png);
+    background: url("../images/popup_confirm.png");
 }
 
 .popup_msg_remove_pd,.popup_msg_confirm{
@@ -62,6 +64,21 @@ border: none;
 border-radius: 16px;
 }
 
+.popup_msg_id{
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 45%;
+    margin: auto;
+    z-index: 9999;
+    width: 340px;
+    height: 176px;
+    background-color: #fff;
+    border: none;
+    border-radius: 16px;
+    }
+
 .popup_msg_ttl_btn{
     width: 296px;
     margin: auto;
@@ -70,6 +87,31 @@ border-radius: 16px;
     justify-content: center;
     align-items: center;
     gap: 32px
+}
+
+.no_id_msg{
+    width: 296px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px
+}
+.no_id{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.no_id a{
+    margin: 8px 0;
+    display: flex;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .popup_msg_ttl_btn_confirm{
@@ -112,6 +154,21 @@ border-radius: 16px;
     border: none;
     border-radius: 100px;
     width: 142px;
+    height: 48px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.popup_btn_signup{
+    cursor: pointer;
+    background: #28231F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
     height: 48px;
     font-weight: 700;
     color: #fff;
@@ -188,14 +245,14 @@ border-radius: 16px;
 }
 .gnb_menu_slider{
     width: 40px;
-    background: url(../torta_da_te/images/menu_nav.png);
+    background: url("../images/menu_nav.png");
 }
 
 .search_icon{
     cursor: pointer;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/search_nav.png);
+    background: url("../images/search_nav.png");
 }
 
 /*서치 시작*/
@@ -245,7 +302,7 @@ border-radius: 16px;
     width: 40px;
     height: 40px;
     color:transparent;
-    background: url(../torta_da_te/images/search_nav.png);
+    background: url("../images/search_nav.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +314,7 @@ border-radius: 16px;
     width: 40px;
     height: 40px;
     color:transparent;
-    background: url(../torta_da_te/images/close_nav.png);
+    background: url("../images/close_nav.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,7 +335,18 @@ border-radius: 16px;
 
 .logo_main{
     
-    margin: auto
+    margin: auto;
+    width: 196px;
+    height: 26px;
+}
+
+.logo_main a{
+    width: 100%;
+}
+.logo_main img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gnb_right{
@@ -315,7 +383,7 @@ gap: 4px
 .logo_sub{
     width: 40px;
     height: 40px;
-    background:url(../torta_da_te/images/logo_s_nav.png);
+    background:url("../images/logo_s_nav.png");
 }
 
 
@@ -413,7 +481,7 @@ gap: 4px
     margin-bottom: 24px;
     justify-content: flex-start;
     align-items: center;
-    background: url(../torta_da_te/images/logo_main.png) no-repeat;
+    background: url("../images/logo.png") no-repeat;
 }
 .close_nav{
     position: relative;
@@ -421,7 +489,7 @@ gap: 4px
     display: flex;
     width: 40px;
     height: 40px;
-    background: url(../torta_da_te/images/close_nav.png);
+    background: url("../images/close_nav.png");
 }
 
 .option{
@@ -473,7 +541,7 @@ gap: 4px
 .see_more{
     width: 24px;
     height: 24px;
-    background:url(../torta_da_te/images/accordian_submenu.png);
+    background:url("../images/accordian_submenu.png");
 }
 
 

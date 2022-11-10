@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../torta_da_te/css/product.css">
     <link rel="shortcut icon" href="images/" type="image/x-icon">
     <link rel="stylesheet" href="../torta_da_te/css/order_confirm_error.css">
-    <link rel="stylesheet" href="../torta_da_te/css/login_signup_popup.css">
     <link rel="stylesheet" href="../torta_da_te/css/login_signup.css">
     <title>Login</title>
 </head>
@@ -51,9 +50,14 @@
             
         </div>
             <div class="logo_right_menu">
-            <div class="logo_main">
-                <a href="../torta_da_te/index.html"><img src="../torta_da_te/images/logo_main.png"  alt=""></a>
+              <div class="logo_main">
+              <a href="index.html">
+            
+              <img src="../images/logo_main.png" alt="" width="196" height="26">
+            </a>
             </div>
+              
+            
             <div class="gnb_right">
             <div class="gnb_business">
                 <h2 class="hide">Business Pages</h2>
@@ -182,18 +186,23 @@
     <div class="overlay" style="display:none"></div>
     
     <!--슬라이드메뉴+오버레이 효과 끝-->
-      </header>
+</header>
         
 <main id="main">
-    
+
+
     <section class="login">
         <div class="login_section">
         <div class="login_ttl">
         <h3>Login</h3>
         </div>
-        <form class="login_form" action="" method="get" onsubmit="return formLogin()">
+        <form class="login_form" action="loggedin.php" method="post" onsubmit="return formLogin()">
             <fieldset>
+                
+                <div class="login_signup_dbl_ttl">
                 <legend class="login_subttl">Welcome back to Torta da te! Fresh & fully customizable cakes are waiting for you!</legend>
+                <span class="signup_ttl">Haven't Signup yet? Please&nbsp;<a href="../torta_da_te/signup.html"> <b>Signup here!</b></a></span>
+                </div>
     
                 <div class="form_details">
                 <label for="email_login">
@@ -225,13 +234,18 @@
                 <div class="google_login">
                     Login with<div class="google_ico"></div>
                 </div>
-    
+                
                 <div class="checkbox_group_login">
                 <input type="checkbox" name="keep_signin" id="keep_signin" checked>
+                
                 <label for="keep_signin">Keep me Sign in<br>
                 <span class="uncheck">Uncheck if you use public device</span>
                 </label>
+                
                 </div>
+
+                
+                
             </fieldset>
     
            </form>
@@ -300,6 +314,7 @@
     <script src="../torta_da_te/js/login.js"></script>
     <script src="../torta_da_te/js/signup_query.js"></script>
     <script src="../torta_da_te/js/navbar.js"></script>
+    <script src="../torta_da_te/js/login_popup.js"></script>
     
 </body>
 </html>
