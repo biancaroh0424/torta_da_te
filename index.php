@@ -1279,6 +1279,7 @@ White cream with raspberry chocolate and fresh mint
 <script src="../torta_da_te/js/navbar.js"></script>
 <script src="../torta_da_te/js/accslider.js"></script>
 <script src="../torta_da_te/js/product_celebration.js"></script>
+<script src="../torta_da_te/js/navmyaccount.js"></script>
 
 
 

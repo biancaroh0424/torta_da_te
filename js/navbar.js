@@ -1,3 +1,4 @@
+
 $(function(){
 
 $(window).scroll(function(){
@@ -75,3 +76,5 @@ $(closeNav).click(function(){
         $(overLay).fadeOut(200);
 });
 });
+
+

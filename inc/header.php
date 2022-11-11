@@ -4,6 +4,8 @@ error_reporting(E_ALL);
 ini_set("display_errors",1);
 ?>
 
+
+
 <header id="header">
     <nav>
     <h1 class="hide">Torta Da Te</h1>
@@ -60,25 +62,43 @@ ini_set("display_errors",1);
     
         <div class="gnb_mypage">
             <h2 class="hide">Mypage</h2>
-            <ul>
+            
                 <?php if (!$s_idx){ ?> 
-                <li>
-                    <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount.png" alt=""><p class="hide">Login</p></a>
-                </li>
+                
+                <div class="login_btn">
+                    <a href="../torta_da_te/login.php">
+                    <img src="../torta_da_te/images/myaccount.png" alt=""><p class="hide">Login</p></a>
+                </div>
+                
+                
+               
                 <?php } else if($s_email == "admin@tortadate.it") { ?>
 
-
-                <li>
+            
+                <div class="login_btn">
                 <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.png" alt=""><p class="hide">Admin</p></a>
-                </li>
+                </div>
+             
+                
                 <?php } else {?>
-                <li>
-                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.png" alt=""><p class="hide">Admin</p></a>
-                </li>
+            
+                <div id="hover_nav" onmouseenter="toggleMyMenu()">
+                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.png" alt=""><p class="hide">MyAccount</p></a>
+                </div>
+                <div id="my_account_menu" class="hidden_mymenu">
+                    <ul class="hidden_menu">
+                        <li><a href="">My Profile</a></li>
+                        <li><a href="../my_cart.html">My Cart</a></li>
+                        <li><a href="">My Whishlist</a></li>
+                        <li><a href="">My Order</a></li>
+                        <li><a href="../logout.php">Logout</a></li>
+                </ul>
+                </div>
+             
                 <?php };?>
-
-                <li><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.png" alt=""><p class="hide">My Cart</p></a></li>
-            </ul>
+            
+                <div><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.png" alt=""><p class="hide">My Cart</p></a></div>
+            
         </div>
         </div>
     </div>
@@ -233,3 +253,5 @@ ini_set("display_errors",1);
 
 <!--슬라이드메뉴+오버레이 효과 끝-->
   </header>   
+
+  
