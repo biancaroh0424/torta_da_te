@@ -45,7 +45,7 @@ ini_set("display_errors",1);
           <div class="logo_main">
           <a href="index.html">
         
-          <img src="../images/logo_main.png" alt="" width="196" height="26">
+          <img src="../torta_da_te/images/logo.svg" alt="">
         </a>
         </div>
           
@@ -65,9 +65,9 @@ ini_set("display_errors",1);
             
                 <?php if (!$s_idx){ ?> 
                 
-                <div class="login_btn">
+                <div class="login_btn_nav">
                     <a href="../torta_da_te/login.php">
-                    <img src="../torta_da_te/images/myaccount.png" alt=""><p class="hide">Login</p></a>
+                    <img src="../torta_da_te/images/myaccount.svg" alt=""><p class="hide">Login</p></a>
                 </div>
                 
                 
@@ -76,14 +76,14 @@ ini_set("display_errors",1);
 
             
                 <div class="login_btn">
-                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.png" alt=""><p class="hide">Admin</p></a>
+                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">Admin</p></a>
                 </div>
              
                 
                 <?php } else {?>
             
                 <div id="hover_nav" onmouseenter="toggleMyMenu()">
-                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.png" alt=""><p class="hide">MyAccount</p></a>
+                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">MyAccount</p></a>
                 </div>
                 <div id="my_account_menu" class="hidden_mymenu">
                     <ul class="hidden_menu">
@@ -91,13 +91,13 @@ ini_set("display_errors",1);
                         <li><a href="../my_cart.html">My Cart</a></li>
                         <li><a href="">My Whishlist</a></li>
                         <li><a href="">My Order</a></li>
-                        <li><a href="../logout.php">Logout</a></li>
+                        <li><a href="../torta_da_te/logout.php">Logout</a></li>
                 </ul>
                 </div>
              
                 <?php };?>
             
-                <div><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.png" alt=""><p class="hide">My Cart</p></a></div>
+                <div><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.svg" alt=""><p class="hide">My Cart</p></a></div>
             
         </div>
         </div>
@@ -146,7 +146,7 @@ ini_set("display_errors",1);
         <div class="option">
         <div class="slide_title_mypage" onclick="location.href='../torta_da_te/login.php'">
         <div class="user_ico_name">
-        <img src="../images/myaccount.png" alt=""><h4 class="user_name">Login</h4>
+        <img src="../torta_da_te/images/myaccount.svg" alt=""><h4 class="user_name">Login</h4>
         </div>
         </div>
         </div>
@@ -156,7 +156,7 @@ ini_set("display_errors",1);
         <div class="option">
         <div class="slide_title_mypage" id="logged_in_mypage">
         <div class="user_ico_name">
-        <img src="../torta_da_te/images/myaccount_logedin.png" alt=""><?php echo $s_email; ?><h4 class="user_name"></h4>
+        <img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><?php echo $s_email; ?><h4 id="user_name"></h4>
         </div>
         <div class="see_more">
             <p class="hide">See more</p>
@@ -177,8 +177,8 @@ ini_set("display_errors",1);
         <div class="option">
         <div class="slide_title_mypage" id="logged_in_mypage">
         <div class="user_ico_name">
-        <img src="../torta_da_te/images/myaccount_logedin.png" alt="">
-        <h4 class="user_name"><?php echo $s_email; ?></h4>
+        <img src="../torta_da_te/images/myaccount_logedin.svg" alt="">
+        <h4 class="loggedin_name"><?php echo $s_email; ?></h4>
         </div>
         <div class="see_more">
             <p class="hide">See more</p>
@@ -188,7 +188,7 @@ ini_set("display_errors",1);
             <li><a href="#">My Cart</a></li>
             <li><a href="#">My Wishlist</a></li>
             <li><a href="#">My Order </a></li>
-            <li><a href="../logout.php">Logout</a></li>
+            <li><a href="../torta_da_te/logout.php">Logout</a></li>
         </ul>
         </div>
         <?php };?>
