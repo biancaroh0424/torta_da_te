@@ -77,13 +77,33 @@ outline: none;
     height: 30px;
     border: none;
 }
-.signup_input_pw:focus{
+.signup_error_input:focus{
     outline: none;
 }
 
+.signup_input_pw:focus{
+    outline: none;
+}
+.login_input:focus{
+    outline: none;
+}
 .signup_input_id:focus{
     outline: none;
 }
+.signup_error_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 338px;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 2px solid #C53F3F;
+    border-radius: 100px;
+}
+
+
 .login_input_pw:focus{
     outline: none;
 }
@@ -266,9 +286,10 @@ outline: none;
 .valid {
     display: flex;
     color: green;
-    height: 18px;
     flex-direction: row;
     width: 338px;
+    font-size: 13px;
+    font-weight: 700;
     align-items: center;
     justify-content: space-between;
 }
@@ -276,3 +297,4 @@ outline: none;
 .valid::after{
     content:url("../images/success_xxxs.png");
 }
+

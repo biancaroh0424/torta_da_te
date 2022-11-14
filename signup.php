@@ -2,9 +2,11 @@
 
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-include "../torta_da_te/inc/session.php"
+include "../torta_da_te/inc/session.php";
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +22,6 @@ include "../torta_da_te/inc/session.php"
     <link rel="shortcut icon" href="../torta_da_te/images/logo_favicon.ico" type="image/x-icon">
 
     <title>Signup</title>
-
 </head>
 <body>
     <?php 
@@ -47,7 +48,7 @@ include "../torta_da_te/inc/session.php"
                         Email
                     </label>
                     <input class="signup_input_id" type="text" name="user_email" id="email_signup" placeholder="Email" onkeyup="checkEmailExist(this.value)">
-                    <span id="errorEmail" class="error_message"></span>
+                    <span id="errorEmail"></span>
         
                     <label for="pw_signup">
                         Password
@@ -61,7 +62,7 @@ include "../torta_da_te/inc/session.php"
                   </div>
 
 
-                    <span id="errorPw" class="error_message"></span>
+                    <span id="errorPw"></span>
 
 
                     <div class="checkbox_group">
@@ -113,19 +114,99 @@ include "../torta_da_te/inc/session.php"
     <script src="../torta_da_te/js/signup_query.js"></script>
     <script src="../torta_da_te/js/navbar.js"></script>
     <script src="../torta_da_te/js/signup.js"></script>
-    <link rel="import" href="../torta_da_te/email_check_ajax.php">
+
+    <script>
+        
+    </script>
+     <script>
+
+
+function checkEmailExist(g_email){
+
+let emailCheck = document.getElementById("email_signup");
+let emailValid = emailCheck.value.length;
+let emailReg = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+let pwValid = document.getElementById("pw_signup");
+let errorMessage = document.getElementById("errorEmail");
+let errorPw = document.getElementById("errorPw");
+const errorEmailBorder = document.getElementById("email_signup");
+
+
+
+if (emailCheck.value==""){
+errorMessage.innerHTML = "Please write your e-mail!";
+errorMessage.classList = "error_message";
+errorEmailBorder.classList="signup_error_input";
+return false;
+
+}else if (emailValid < 10 || emailValid > 64){
+errorMessage.innerHTML = "Please write valid Email";
+errorMessage.classList = "error_message";
+errorEmailBorder.classList="signup_error_input";
+return false;
+}else if(emailCheck.value == emailReg){
+errorMessage.innerHTML = "Please write valid Email";
+errorMessage.classList = "error_message";
+errorEmailBorder.classList="signup_error_input";
+return false;
+
+} else{
+var xmlhttp = fncGetXMLHttpRequest();
+
+// 아이디를 체크할 php 페이지에 체크 하려하는 id 값을 파라미터로 전송
+//     alert('id_check_ajax.php?user_email='+g_email);
+// return false;
+
+
+xmlhttp.open('GET', 'email_check_ajax.php?user_email='+g_email, false);
+
+xmlhttp.setRequestHeader('Content-Type','application/x-www-form-urlencoded; charset=UTF-8');
+
+xmlhttp.onreadystatechange = function (){
+if( xmlhttp.readyState=='4' && xmlhttp.status==200 ){
+    if( xmlhttp.status==500 || xmlhttp.status==404 || xmlhttp.status==403 )
+        alert( xmlhttp.status );
+    else{
+        var txt = xmlhttp.responseText;
+        txt = txt.replace(/\n/g, "");
+        txt = txt.replace(/\r/g, ""); 
+        txt = txt.replace(/\s+/, ""); 
+        txt = txt.replace(/\s+$/g, ""); 
+
+        if(txt=='N') {
+            errorMessage.innerHTML = 'This email already taken🥲 Try another!';
+            errorMessage.classList = 'error_message';
+        } else{
+            errorEmailBorder.classList = 'login_input';
+            errorMessage.innerHTML = 'This email can use!';
+            errorMessage.classList= 'valid';
+        }
+    }
+}
+}
+}
+xmlhttp.send();
+}
+
+function fncGetXMLHttpRequest(){
+if (window.ActiveXObject){
+try{
+return new ActiveXObject("Msxml2.XMLHTTP");
+}
+catch(e){
+try{
+    return new ActiveXObject("Microsoft.XMLHTTP");
+} 
+catch(e1) { return null; }
+}
+//IE 외 파이어폭스 오페라 같은 브라우저에서 XMLHttpRequest 객체 구하기
+} else if (window.XMLHttpRequest){
+return new XMLHttpRequest();
+} else{
+return null;
+}
+}
+</script>
 </body>
 </html>
-
-<?php
-$user_email = $_POST["user_email"];
-
-include "../torta_da_te/inc/dbcon.php";
-
-$sql = "select email from members where email = '$user_email';";
-
-
-$result = mysqli_query($dbcon, $sql);
-
-$num = mysqli_num_rows($result);
-?>
