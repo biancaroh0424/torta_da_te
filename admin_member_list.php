@@ -50,6 +50,20 @@ if($e_pageNum > $total_page){
 </head>
 
 <body>
+<div class="popup_msg_remove_pd">
+    <div class="close_popup"><span class="hide">close</span></div>
+    <div class="popup_msg_ttl_btn">
+      <div class="popup_msg_group">
+    <span>Are you sure to remove it?</span>
+    <span>Once you delete this member,<br> you cannot recover it</span>
+  </div>
+    <div class="popup_msg_btn_group">
+        <span class="popup_btn_cancel">Cancel</span>
+        <span class="popup_btn_confirm" onclick="">Confirm</span>
+    </div>
+    </div>
+</div>
+<div class="overlay_popup"></div>
   <?php 
     include "../torta_da_te/admin_header.php";
   ?>
