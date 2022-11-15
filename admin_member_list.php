@@ -1,7 +1,10 @@
 <?php
+error_reporting(E_ALL);
+ini_set("display_errors",1);
 
-include "../torta_da_te/inc/session";
-include "../torta_da_te/inc/loggedin.php";
+
+include "../torta_da_te/inc/session.php";
+include "../torta_da_te/loggedin.php";
 
 include "../torta_da_te/inc/dbcon.php";
 
@@ -50,8 +53,8 @@ if($e_pageNum > $total_page){
 </head>
 
 <body>
-<div class="popup_msg_remove_pd">
-    <div class="close_popup"><span class="hide">close</span></div>
+<!-- <div class="popup_msg_remove_pd" style="display:none">
+    <div class="close_popup" onclick="closePopup()"><span class="hide">close</span></div>
     <div class="popup_msg_ttl_btn">
       <div class="popup_msg_group">
     <span>Are you sure to remove it?</span>
@@ -59,11 +62,11 @@ if($e_pageNum > $total_page){
   </div>
     <div class="popup_msg_btn_group">
         <span class="popup_btn_cancel">Cancel</span>
-        <span class="popup_btn_confirm" onclick="">Confirm</span>
+        <span class="popup_btn_confirm" onclick="removeConfirm()">Confirm</span>
     </div>
     </div>
 </div>
-<div class="overlay_popup"></div>
+<div class="overlay_popup" style="display:none"></div> -->
   <?php 
     include "../torta_da_te/admin_header.php";
   ?>
@@ -81,7 +84,7 @@ if($e_pageNum > $total_page){
 </div>
 <div class="sub_title_total">
 <span>Total: <?php echo $total; ?> &nbsp; Members</span>
-<span class="select_all_btn">Select All</span>
+<label for="select_member" class="select_all_btn">Select All</label>
 </div>
 <div class="order_list_tb_admin">
   <table>
@@ -89,8 +92,8 @@ if($e_pageNum > $total_page){
       
       <tr>
         <th><input type="checkbox" name="" id="select_all"></th>
+        <th>Fullname</th>
         <th>Email</th>
-        <th>Role</th>
         <th>Signup Date</th>
         <th>Method</th>
       <th></th>
@@ -108,19 +111,14 @@ if($e_pageNum > $total_page){
       while($array = mysqli_fetch_array($result)){
       ?>
       <tr>
-        <td><input type="checkbox" name="" id=""></td>
+        <td><input type="checkbox" name="" id="select_member"></td>
+        <td><?php echo $array["fullname"]?></td>
         <td><?php echo $array["email"]?></td>
-        <td><?php echo $array["role"]?></td>
         <td><?php echo $array["reg_date"]?></td>
         <td>Google Signup</td>
-        <td><img src="../torta_da_te/images/view_more.png" alt="view details" onmouseover="editMember(this)" class="edit_member">
-        <div id="edit_member_details" class="hidden_mymenu_panel">
-          <ul class="hidden_menu">
-              <li><a href="../torta_da_te/member_info.php?g_idx<?php echo $array["idx"];?>"><img src="../torta_da_te/images/admin_block.svg" alt=""> Block this user</a></li>
-              <li><a href="#" onclick="member_del(<?php echo $array['idx'];?>"><img src="../torta_da_te/images/admin_delete.svg" alt=""> Delete this user</a></li>
-              <li><a href="../my_cart.html"><img src="../torta_da_te/images/admin_recover.svg" alt="">Recover this user</a></li>
-      </ul>
-      </div>
+        <td class="last_td">
+        <a class="remove_btn" href="member_info.php?g_idx=<?php echo $array["idx"]; ?>"><img src="../torta_da_te/images/myaccount.svg" alt="" width="20" height="20" alt="">Info</a>
+        <span class="remove_btn" onclick="removeUser(<?php echo $array['idx']; ?>)"><img src="../torta_da_te/images/admin_delete.svg">Remove</span>
       </td>
       </tr>
       <?php
@@ -168,14 +166,17 @@ if($page <=1){
 </main>
 <footer></footer>
 <script src="../torta_da_te/js/navmyaccount.js"></script>
+<script src="../torta_da_te/js/admin_member_list.js"></script>
 
 <script>
-  function addActive(){
-  const currentPage = document.querySelector('.pagiation_number');
-  currentPage.classList.add='pagiation_number_active';
-}
-</script>
-  
-</script>
+  function removeUser(g_no){
+    let confirmMessage = confirm("Are you sure to remove? Once you remove this member, you cannot recover it");
+
+    if(confirmMessage == true){
+        location.href="member_delete.php?g_idx=" + g_no;
+    };
+};
+  </script>
+
 </body>
 </html>
