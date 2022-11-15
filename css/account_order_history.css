@@ -1,0 +1,72 @@
+.order_history_table{
+    display: flex;
+    flex-direction: column;
+    width: 780px;
+}
+.order_history_header,.order_history_body{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #CCBEB8;
+    padding: 12px;
+    gap: 12px
+}
+.order_history_header > div{
+padding: 16px 0;
+box-sizing: border-box;
+text-align: center;
+justify-content: center;
+}
+.order_history_header > div:first-child,
+.order_history_body > div:first-child{
+    width: 280px;
+}
+.order_history_header > div:nth-child(2),
+.order_history_body > div:nth-child(2){
+    width: 100px;
+}
+.order_history_header > div:nth-child(3),
+.order_history_body > div:nth-child(3){
+    width: 110px;
+}
+.order_history_header > div:nth-child(4),
+.order_history_body > div:nth-child(4){
+    width: 110px;
+}
+.order_history_header > div:last-child,
+.order_history_body > div:last-child{
+    width: 110px;
+}
+.order_history_body{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #CCBEB8;
+    padding: 12px;
+}
+.order_history_body > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.order_history_pic_ttl{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.order_history_table_ttl{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+}
+.order_history_table_ttl span:last-child{
+    font-weight: 700;
+}
+
+.reorder_btn{
+    border: 2px solid #28231F;
+    padding: 8px 16px;
+    font-weight: 700;
+    border-radius: 100px;
+}

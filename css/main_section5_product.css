@@ -202,6 +202,19 @@
     height: 40px;
     background: url("../images/wishlist.png");
 }
+
+
+.remove_wish {
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/close_nav.png");
+}
+
+
 .wishlist_added{
     cursor: pointer;
     position: absolute;

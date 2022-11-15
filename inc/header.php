@@ -83,13 +83,13 @@ ini_set("display_errors",1);
                 <?php } else {?>
             
                 <div id="hover_nav" onmouseenter="toggleMyMenu()">
-                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">MyAccount</p></a>
+                <a href="../torta_da_te/account_personal_info.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">MyAccount</p></a>
                 </div>
                 <div id="my_account_menu" class="hidden_mymenu">
                     <ul class="hidden_menu">
-                        <li><a href="">My Profile</a></li>
-                        <li><a href="../my_cart.html">My Cart</a></li>
-                        <li><a href="">My Whishlist</a></li>
+                        <li><a href="../torta_da_te/account_personal_info.php">My Profile</a></li>
+                        <li><a href="../torta_da_te/my_cart.php">My Cart</a></li>
+                        <li><a href="../torta_da_te/account_mywishlist.php">My Whishlist</a></li>
                         <li><a href="">My Order</a></li>
                         <li><a href="../torta_da_te/logout.php">Logout</a></li>
                 </ul>
@@ -97,7 +97,7 @@ ini_set("display_errors",1);
              
                 <?php };?>
             
-                <div><a href="../torta_da_te/my_cart.html"><img src="../torta_da_te/images/cart_nav.svg" alt=""><p class="hide">My Cart</p></a></div>
+                <div><a href="../torta_da_te/my_cart.php"><img src="../torta_da_te/images/cart_nav.svg" alt=""><p class="hide">My Cart</p></a></div>
             
         </div>
         </div>
@@ -163,8 +163,8 @@ ini_set("display_errors",1);
         </div>
         </div>
         <ul id="user_menu" style="display:none">
-            <li><a href="#">My Cart</a></li>
-            <li><a href="#">My Wishlist</a></li>
+            <li><a href="../torta_da_te/my_cart.php">My Cart</a></li>
+            <li><a href="../torta_da_te/account_mywishlist.php">My Wishlist</a></li>
             <li><a href="#">My Order </a></li>
             <li><a href="../torta_da_te/logout.php">Logout</a></li>
         </ul>
@@ -185,8 +185,8 @@ ini_set("display_errors",1);
         </div>
         </div>
         <ul id="user_menu" style="display:none">
-            <li><a href="#">My Cart</a></li>
-            <li><a href="#">My Wishlist</a></li>
+            <li><a href="../torta_da_te/my_cart.php">My Cart</a></li>
+            <li><a href="../torta_da_te/account_mywishlist.php">My Wishlist</a></li>
             <li><a href="#">My Order </a></li>
             <li><a href="../torta_da_te/logout.php">Logout</a></li>
         </ul>
@@ -243,7 +243,7 @@ ini_set("display_errors",1);
             <li><a href="#">Drinks</a></li>
         </ul>
         </div>
-        <h4><a href="#">ABOUT US</a></h4>
+        <h4><a href="../about_us.html">ABOUT US</a></h4>
         <h4><a href="faq.html">FAQ</a></h4>
         <h4><a href="1to1_qna.html">1:1 Q&A</a></h4>
         </div>

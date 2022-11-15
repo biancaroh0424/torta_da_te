@@ -34,7 +34,7 @@
     </div>
 
 
-<div class="popup_msg_remove_pd">
+<div class="popup_msg_remove_pd" style="display:none">
     <div class="close_popup"><span class="hide">close</span></div>
     <div class="popup_msg_ttl_btn">
     <span>Are you sure to remove it?</span>
@@ -44,7 +44,7 @@
     </div>
     </div>
 </div>
-<div class="overlay_popup"></div>
+<div class="overlay_popup" style="display:none"></div>
 <!-- 팝업메세지 오버레이 끝-->
 
 
