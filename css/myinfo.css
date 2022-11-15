@@ -60,7 +60,10 @@
     padding: 12px 12px;
     border: 1px solid #CCBEB8;
     border-radius: 100px;
-    width: 380px;
+    width: 100%;
+}
+.personal_info_ttl input:focus{
+    outline: none;
 }
 .myinfo_sec{
     margin: 56px 0;
@@ -97,10 +100,73 @@
 .personal_info_ttl div{
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    justify-content: space-between;
 }
 .personal_info_ttl button{
+    padding: 8px 12px;
     background-color: #fff;
     border: none;
     text-decoration: underline;
+}
+
+
+.pw_ico {
+    position: relative;
+    width: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+height: 40px;
+box-sizing: border-box;
+border-radius: 100px;
+}
+
+.error_message_myinfo{
+    width: 480px !important;
+    display: flex;
+    align-items:center;
+    width: 340px;
+    font-size: 13px;
+    color:#C53F3F;
+    font-weight: 700;
+}
+
+.valid_myinfo {
+    display: flex;
+    color: green;
+    flex-direction: row;
+    width: 436px;
+    font-size: 13px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valid_myinfo::after{
+    content:url("../images/success_xxxs.png");
+}
+.firstable_btn{
+    width: 480px;
+    border: none;
+    border-radius: 100px;
+    background-color: #28231F;
+    color: #fff;
+    font-size: 13px;
+    display: flex;
+    padding: 12px 12px;
+    justify-content: center;
+    margin: 80px 0 20px 0 ;
+    font-weight: 700;
+}
+.secondable_btn{
+    box-sizing: border-box;
+    width: 480px;
+    border: 1px solid #CCBEB8;
+    border-radius: 100px;
+    background-color: #fff;
+    color: #6f6b68;
+    font-size: 13px;
+    display: flex;
+    padding: 12px 12px;
+    justify-content: center;
 }

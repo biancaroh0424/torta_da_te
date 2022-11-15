@@ -43,7 +43,7 @@ ini_set("display_errors",1);
     </div>
         <div class="logo_right_menu">
           <div class="logo_main">
-          <a href="index.html">
+          <a href="../torta_da_te/index.php">
         
           <img src="../torta_da_te/images/logo.svg" alt="">
         </a>
@@ -54,9 +54,9 @@ ini_set("display_errors",1);
         <div class="gnb_business">
             <h2 class="hide">Business Pages</h2>
             <ul>
-                <li><a href="../torta_da_te/location.html">Location</a></li>
-                <li><a href="../torta_da_te/about_us.html">About us</a></li>
-                <li><a href="../torta_da_te/faq.html">FAQ</a></li>
+                <li><a href="../torta_da_te/location.php">Location</a></li>
+                <li><a href="../torta_da_te/about_us.php">About us</a></li>
+                <li><a href="../torta_da_te/faq.php">FAQ</a></li>
             </ul>
         </div>
     
@@ -111,10 +111,10 @@ ini_set("display_errors",1);
     <h2 class="hide">Sub Menu</h2>
     <div class="gnb_sub_area">
     <ul>
-        <li><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK & COLLECT</a></li>
-        <li><a href="../torta_da_te/product_celebration.html">CELEBRATION</a></li>
-        <li><a href="../torta_da_te/product_vegeterian.html">VEGETERIAN</a></li>
-        <li><a href="../torta_da_te/product_accessories.html">ACCESSORIES</a></li>
+        <li><a href="../torta_da_te/product_1hour.php">1 HOUR CLICK & COLLECT</a></li>
+        <li><a href="../torta_da_te/product_celebration.php">CELEBRATION</a></li>
+        <li><a href="../torta_da_te/product_vegeterian.php">VEGETERIAN</a></li>
+        <li><a href="../torta_da_te/product_accessories.php">ACCESSORIES</a></li>
     </ul>
 </div>
     </div>
@@ -122,10 +122,10 @@ ini_set("display_errors",1);
         <h2 class="hide">Sub Menu</h2>
         <div class="gnb_sub_area">
         <ul>
-            <li><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK & COLLECT</a></li>
-            <li><a href="../torta_da_te/product_celebration.html">CELEBRATION</a></li>
-            <li><a href="../torta_da_te/product_vegeterian.html">VEGETERIAN</a></li>
-            <li><a href="../torta_da_te/product_accessories.html">ACCESSORIES</a></li>
+            <li><a href="../torta_da_te/product_1hour.php">1 HOUR CLICK & COLLECT</a></li>
+            <li><a href="../torta_da_te/product_celebration.php">CELEBRATION</a></li>
+            <li><a href="../torta_da_te/product_vegeterian.php">VEGETERIAN</a></li>
+            <li><a href="../torta_da_te/product_accessories.php">ACCESSORIES</a></li>
         </ul>
     </div>
         </div>
@@ -194,7 +194,7 @@ ini_set("display_errors",1);
         <?php };?>
   
 
-        <h4><a href="../torta_da_te/product_1hour.html">1 HOUR CLICK AND COLLECT</a></h4>
+        <h4><a href="../torta_da_te/product_1hour.php">1 HOUR CLICK AND COLLECT</a></h4>
 
         <div class="option">
         <div class="slide_title" id="celebration">
@@ -243,9 +243,9 @@ ini_set("display_errors",1);
             <li><a href="#">Drinks</a></li>
         </ul>
         </div>
-        <h4><a href="../about_us.html">ABOUT US</a></h4>
-        <h4><a href="faq.html">FAQ</a></h4>
-        <h4><a href="1to1_qna.html">1:1 Q&A</a></h4>
+        <h4><a href="../torta_da_te/about_us.php">ABOUT US</a></h4>
+        <h4><a href="../torta_da_te/faq.php">FAQ</a></h4>
+        <h4><a href="../torta_da_te/1to1_qna.php">1:1 Q&A</a></h4>
         </div>
         </div>
      

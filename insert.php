@@ -8,7 +8,7 @@ $user_email = $_POST["user_email"];
 $user_pw = $_POST["user_pw"];
 
 
-$signup_date = date("Y-d-m");
+$signup_date = date("Y-m-d");
 // echo "$user_email";
 // echo "$user_pw";
 
@@ -27,7 +27,7 @@ mysqli_query($dbcon, $sql);
 mysqli_close($dbcon);
 
 echo "<script>
-        location.href=\"index.php\";
+        location.href=\"../torta_da_te/login.php\";
         </script>
 "
 
