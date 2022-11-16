@@ -1,12 +1,3 @@
-<!-- <?php
-error_reporting(E_ALL);
-ini_set("display_errors",1);
-include "../torta_da_te/inc/session.php";
-//include "../torta_da_te/loggedin.php";
-include "../torta_da_te/inc/dbcon.php";
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +36,7 @@ include "../torta_da_te/inc/dbcon.php";
   </div>
   <form action="" method="post">
     <fieldset>
-      <h2>FaQ</h2>
+      <h2>1:1 QnA</h2>
     <div class="total_posts">
     <span>  
     Total : 123 posts
@@ -55,20 +46,21 @@ include "../torta_da_te/inc/dbcon.php";
       Write a post
     </a>
   </div>
-  <div class="board_table">
-  <div class="board_table_header">
+  <div class="board_table_qna">
+  <div class="board_table_header_qna">
     <div>&nbsp;</div>
+    <div>Writer</div>
     <div>Title</div>
-    <div>View</div>
+    <div>Status</div>
     <div>Date</div>
     <div>&nbsp;</div>
   </div>
-  <div class="board_table_body_group">
-  <div class="board_table_body">
-  <div><input type="checkbox">
-  </div>
+  <div class="board_table_body_qna_group">
+  <div class="board_table_body_qna">
+  <div><input type="checkbox"></div>
+    <div>davidpierre_esposito@gmail.com</div>
     <div>TITLE description description description description </div>
-    <div>0</div>
+    <div>Replied</div>
     <div>2022.11.11</div>
     <div>
       <div class="post_setting">  
@@ -77,11 +69,11 @@ include "../torta_da_te/inc/dbcon.php";
       </div>
     </div>
   </div>
-  <div class="board_table_body">
-  <div><input type="checkbox">
-  </div>
+  <div class="board_table_body_qna">
+  <div><input type="checkbox"></div>
+    <div>davidpierre_esposito@gmail.com</div>
     <div>TITLE description description description description </div>
-    <div>0</div>
+    <div>Replied</div>
     <div>2022.11.11</div>
     <div>
       <div class="post_setting">  
@@ -96,9 +88,22 @@ include "../torta_da_te/inc/dbcon.php";
 </form>
 </div>
 </div>
+<div class="pagination_arrow">
+  <a href="#"><img src="/torta_da_te/images/arrow_xs_left.png" alt="go to previous page"></a>
+  <div class="pagination">
+  <a href="#_none" class="pagination_active">1</a>
+  <a href="#_none">2</a>
+  <a href="#_none">3</a>
+  <a href="#_none">4</a>
+  <a href="#_none">...</a>
+  <a href="#_none">10</a>
+  </div>
+  <a href="#"><img src="/torta_da_te/images/arrow_xs_right.png" alt="go to next page"></a>
+</div>
+</div>
+</main>
+<footer></footer>
 
-
-  
 
 </body>
 </html>

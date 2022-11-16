@@ -172,7 +172,7 @@ justify-content: center;
     border: 2px solid #fff;
     border-radius: 100px;
     padding: 16px;
-    background-color: #28231F;
+    /* background-color: #28231F; */
 }
 #user_name, #user_email::placeholder{
     font-weight: 700;

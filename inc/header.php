@@ -75,8 +75,8 @@ ini_set("display_errors",1);
                 <?php } else if($s_email == "admin@tortadate.it") { ?>
 
             
-                <div class="login_btn">
-                <a href="../torta_da_te/login.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">Admin</p></a>
+                <div class="login_btn_nav">
+                <a href="../torta_da_te/admin_home.php"><img src="../torta_da_te/images/myaccount_logedin.svg" alt=""><p class="hide">Admin</p></a>
                 </div>
              
                 

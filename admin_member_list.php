@@ -2,10 +2,8 @@
 error_reporting(E_ALL);
 ini_set("display_errors",1);
 
-
 include "../torta_da_te/inc/session.php";
-include "../torta_da_te/loggedin.php";
-
+//include "../torta_da_te/loggedin.php";
 include "../torta_da_te/inc/dbcon.php";
 
 $sql = "select * from members;";
@@ -53,54 +51,39 @@ if($e_pageNum > $total_page){
 </head>
 
 <body>
-<!-- <div class="popup_msg_remove_pd" style="display:none">
-    <div class="close_popup" onclick="closePopup()"><span class="hide">close</span></div>
-    <div class="popup_msg_ttl_btn">
-      <div class="popup_msg_group">
-    <span>Are you sure to remove it?</span>
-    <span>Once you delete this member,<br> you cannot recover it</span>
-  </div>
-    <div class="popup_msg_btn_group">
-        <span class="popup_btn_cancel">Cancel</span>
-        <span class="popup_btn_confirm" onclick="removeConfirm()">Confirm</span>
-    </div>
-    </div>
-</div>
-<div class="overlay_popup" style="display:none"></div> -->
-  <?php 
+
+<?php 
     include "../torta_da_te/admin_header.php";
-  ?>
+  ?> 
 <main>
      <?php
      include "../torta_da_te/admin_aside.php";
      ?>
 
-<form action="" method="get">
-  <fieldset>
-<div class="table_group">
-  <div class="order_list_title">
-  <span>Members</span>
-  <button type="submit" class="add_product_admin_btn">Send Newsletter<img src="../torta_da_te/images/newsletter.svg" alt=""></button>
-</div>
-<div class="sub_title_total">
-<span>Total: <?php echo $total; ?> &nbsp; Members</span>
-<label for="select_member" class="select_all_btn">Select All</label>
-</div>
-<div class="order_list_tb_admin">
-  <table>
-    <thead>
-      
-      <tr>
-        <th><input type="checkbox" name="" id="select_all"></th>
-        <th>Fullname</th>
-        <th>Email</th>
-        <th>Signup Date</th>
-        <th>Method</th>
-      <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <?php
+<div class="board_column_layout">
+  <form action="" method="post">
+    <fieldset>
+      <h2>Members</h2>
+    <div class="total_posts">
+    <span>  
+    Total : <?php echo $total; ?>&nbsp;Members
+    </span>
+    <a href="" class="add_post_btn">
+      <img src="../torta_da_te/images/add_ico_white.svg" alt="">
+      Write a post
+    </a>
+  </div>
+  <div class="board_table_member">
+  <div class="board_table_header_member">
+    <div>&nbsp;</div>
+    <div>Fullname</div>
+    <div>Email</div>
+    <div>Signup Date</div>
+    <div>Method</div>
+    <div>&nbsp;</div>
+  </div>
+  <div class="board_table_body_member_group">
+  <?php
       $start = ($page - 1) * $list_num;
       $sql = "select * from members limit $start, $list_num;";
       // echo $sql;
@@ -110,28 +93,32 @@ if($e_pageNum > $total_page){
       $i = $start+1;
       while($array = mysqli_fetch_array($result)){
       ?>
-      <tr>
-        <td><input type="checkbox" name="" id="select_member"></td>
-        <td><?php echo $array["fullname"]?></td>
-        <td><?php echo $array["email"]?></td>
-        <td><?php echo $array["reg_date"]?></td>
-        <td>Google Signup</td>
-        <td class="last_td">
-        <a class="remove_btn" href="member_info.php?g_idx=<?php echo $array["idx"]; ?>"><img src="../torta_da_te/images/myaccount.svg" alt="" width="20" height="20" alt="">Info</a>
+  <div class="board_table_body_member">
+  <div>
+    <input type="checkbox">
+  </div>
+    <div><?php echo $array["fullname"]?></div>
+    <div><?php echo $array["email"]?></div>
+    <div><?php echo $array["reg_date"]?></div>
+    <div>Google Signup</div>
+    <div>
+      <div class="post_setting_member">  
+      <a class="remove_btn" href="member_info.php?g_idx=<?php echo $array["idx"]; ?>"><img src="../torta_da_te/images/myaccount.svg" alt="" width="20" height="20" alt="">Info</a>
         <span class="remove_btn" onclick="removeUser(<?php echo $array['idx']; ?>)"><img src="../torta_da_te/images/admin_delete.svg">Remove</span>
-      </td>
-      </tr>
-      <?php
+      </div>
+    </div>
+  </div>
+  <?php
         $i++;
       };
       ?>
+</div>
+      </div>
 
-    </tbody>
-  </table>
-</div>
-</div>
-</fieldset>
+
+    </fieldset>
 </form>
+</div>
 
 
 <div class="pagination_arrow">
@@ -161,8 +148,6 @@ if($page <=1){
   <a href="../torta_da_te/admin_member_list.php?page=<?php echo ($page + 1); ?>"><img src="../torta_da_te/images/arrow_xs_right.svg" alt="go to next page"></a>
   <?php };?>
 
-</div>
-</div>
 </main>
 <footer></footer>
 <script src="../torta_da_te/js/navmyaccount.js"></script>

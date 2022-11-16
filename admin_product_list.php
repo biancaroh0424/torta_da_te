@@ -24,7 +24,7 @@
 <div class="table_group admin_product">
   <div class="order_list_title">
   <span>Item Lists</span>
-  <button type="button" class="add_product_admin_btn">Add New Item<img src="../torta_da_te/images/add_ico_white.png" alt=""></button>
+  <a href="../torta_da_te/admin_add_product.php" class="add_product_admin_btn">Add New Item<img src="../torta_da_te/images/add_ico_white.svg" alt=""></a>
 </div>
 <div class="admin_product_select">
   <div class="admin_product_select_right">
