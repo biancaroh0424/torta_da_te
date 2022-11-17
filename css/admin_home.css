@@ -420,7 +420,7 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 440px;
+    width: 100%;
 }
 .add_category{
     display: flex;
@@ -690,8 +690,11 @@ font-size: 13px;
 }
 .board_table_body>div:nth-child(2),.board_table_header>div:nth-child(2){
 font-size: 13px;
-    width: 468px;
+    width: 512px;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .board_table_body>div:nth-child(3),.board_table_header>div:nth-child(3){
 font-size: 13px;
@@ -764,6 +767,9 @@ font-size: 13px;
 font-size: 13px;
     width: 330px;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .board_table_body_qna>div:nth-child(4),.board_table_header_qna>div:nth-child(4){
 font-size: 13px;
@@ -840,6 +846,9 @@ font-size: 13px;
 font-size: 13px;
     width: 240px;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .board_table_body_member>div:nth-child(4),.board_table_header_member>div:nth-child(4){
 font-size: 13px;

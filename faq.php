@@ -1,9 +1,37 @@
-
 <?php
 
 error_reporting(E_ALL);
 ini_set("display_errors",1);
 include "../torta_da_te/inc/session.php";
+
+include "../torta_da_te/inc/dbcon.php";
+
+$sql = "select * from notice";
+
+$result = mysqli_query($dbcon, $sql);
+$total = mysqli_num_rows($result);
+
+$list_num = 6;
+$page_num = 1;
+
+$page = isset($_GET["page"])? $_GET["page"]:1;
+
+$total_page = ceil($total / $list_num);
+$total_blick = ceil($page / $page_num);
+
+$current_block = ceil($page / $page_num);
+
+$s_pageNum = ($current_block -1) * $page_num +1;
+
+if ($s_pageNum <=0){
+    $s_pageNum = 1;
+};
+
+$e_pageNum = $current_block * $page_num;
+
+if($e_pageNum > $total_page){
+    $e_pageNum = $total_page;
+};
 ?>
 
 <!DOCTYPE html>
@@ -12,10 +40,10 @@ include "../torta_da_te/inc/session.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="..torta_da_te/css/css_reset.css">
-    <link rel="stylesheet" type="text/css" href="..torta_da_te/css/style_menu_footer.css">
-    <link rel="stylesheet" href="..torta_da_te/css/faq.css">
-    <link rel="shortcut icon" href="..torta_da_te/images/logo_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../torta_da_te/css/css_reset.css">
+    <link rel="stylesheet" type="text/css" href="../torta_da_te/css/style_menu_footer.css">
+    <link rel="stylesheet" href="../torta_da_te/css/faq.css">
+    <link rel="shortcut icon" href="../torta_da_te/images/logo_favicon.ico" type="image/x-icon">
     <title>FaQ</title>
 
 </head>
@@ -39,63 +67,36 @@ include "../torta_da_te/inc/session.php";
             </ul>
         </div>
 
+<?php
+
+$start = ($page - 1) * $list_num;
+
+$sql = "select * from notice order by idx desc limit $start, $list_num;";
+
+
+$result = mysqli_query($dbcon, $sql);
+
+$i = $total - (($page - 1) * $list_num);
+while($array = mysqli_fetch_array($result)){
+?>
         <div class="faq_posts">
             <div class="faq_posts_ttl_desc">
             <span class="faq_posts_ttl">
-                Why do your cakes contain a lot of cream?
+                <?php echo $array["n_title"];?>
                 <div class="arrow_more"></div>
             </span>
             <span class="faq_posts_desc">
-                Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
+               <?php 
+               $n_content = str_replace("\n", "<br>", $array["n_content"]);
+               $n_content = str_replace(" ", "&nbsp;", $n_content);
+               echo $n_content;
+               ?>
             </span>
             </div>
-
-            <div class="faq_posts_ttl_desc">
-                <span class="faq_posts_ttl">
-                    Are your cakes suitable for people with nut allergies?
-                    <div class="arrow_more"></div>
-                </span>
-                <span class="faq_posts_desc">
-                    Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
-                </span>
-            </div>
-
-            <div class="faq_posts_ttl_desc">
-                <span class="faq_posts_ttl">
-                    Are your cakes Halal?
-            <div class="arrow_more"></div>
-                </span>
-            <span class="faq_posts_desc">
-                Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
-            </span>
-            </div>
-
-            <div class="faq_posts_ttl_desc">
-                <span class="faq_posts_ttl">
-                    My party has been cancelled. If I cancel my cake order, will I get my money back?
-                <div class="arrow_more"></div>
-                </span>
-            <span class="faq_posts_desc">
-                Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
-                </span>
-            </div>
-            <div class="faq_posts_ttl_desc">
-                <span class="faq_posts_ttl">
-                    Do you freeze your sponges?
-                <div class="arrow_more"></div>
-                </span>
-            <span class="faq_posts_desc">
-                Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
-                </span>
-            </div>
-            <div class="faq_posts_ttl_desc">
-                <span class="faq_posts_ttl">
-                    Do you make cakes other than ones with fresh cream?
-                <div class="arrow_more"></div>
-                </span>
-            <span class="faq_posts_desc">
-                Our cakes are generally loved for the abundance of fresh cream. Elaborate decoration with cream is also a feature of celebration cakes and this is in addition, on top and sides of our cakes. Please use your discretion in serving the desired amount of cream to sponge. Darkly coloured cream will taste bitter and is best not served at all.
-                </span>
+<?php
+    $i--;
+};
+?>
             </div>
         </div>
     </section>
@@ -134,8 +135,7 @@ include "../torta_da_te/inc/session.php";
 
 <?php include "../torta_da_te/inc/footer.html"?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="..torta_da_te/js/navbar.js"></script>
-
+<script src="../torta_da_te/js/faq.js"></script>
+<script src="../torta_da_te/js/navbar.js"></script>
 </body>
 </html>

@@ -123,6 +123,7 @@
     width: 780px;
     display: flex;
     justify-content: flex-start;
+    overflow-wrap:anywhere;
 }
 .hide{
     display: none;

@@ -109,11 +109,17 @@ gap: 8px;
 }
 
 .secondary_button{
+    box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #ccbeb8;
     border-radius: 8px;
     padding: 8px 16px;
     font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
 }
 
 .admin_options_right{
@@ -347,7 +353,9 @@ font-weight: normal;
 .category_row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 24px;
 }
 .category_column:last-child{
     display: flex;
