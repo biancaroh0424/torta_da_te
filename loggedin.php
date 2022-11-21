@@ -1,11 +1,9 @@
-<!-- link 써서 css 불러오기
-모달 박스 만드는 div , script  -->
 
 <?php
 
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-include "../torta_da_te/inc/session.php"
+
 
 ?>
 

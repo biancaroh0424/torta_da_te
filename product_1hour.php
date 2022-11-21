@@ -1,9 +1,4 @@
-<?php
-error_reporting(E_ALL);
-ini_set("display_errors",1);
-require "../torta_da_te/product_config.php";
-require "../torta_da_te/inc/dbcon.php";
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -126,7 +121,7 @@ require "../torta_da_te/inc/dbcon.php";
                 $result = mysqli_query($dbcon, $sql);
                 while($row=$result->fetch_assoc()){
             ?>
-            <li class="product_card">
+    <li class="product_card">
             <a href="../torta_da_te/order_process.php">
                 <div class="card_img">
                     <img src="<?= $row['image'];?>">
@@ -172,7 +167,7 @@ require "../torta_da_te/inc/dbcon.php";
             <div class="wishlist">
                 <div class="hide">Add to Wishlist</div>
             </div>
-            </li>
+    </li>
             <?php };?>
         </ul>
         <!-- <?php

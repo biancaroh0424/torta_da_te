@@ -1,7 +1,6 @@
 <?php
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-require "../torta_da_te/product_config.php";
 require "../torta_da_te/inc/dbcon.php";
 ?>
 

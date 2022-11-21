@@ -1,8 +1,8 @@
 <?php
-
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-
+include "session.php";
+require "dbcon.php";
 ?>
 
 
@@ -98,7 +98,9 @@ ini_set("display_errors",1);
              
                 <?php };?>
             
-                <div><a href="../torta_da_te/my_cart.php"><img src="../torta_da_te/images/cart_nav.svg" alt=""><p class="hide">My Cart</p></a></div>
+                <div><a href="../torta_da_te/my_cart.php"><img src="../torta_da_te/images/cart_nav.svg" alt="">
+                <div class="mycart_state"><span id="cart_item">1</span></div>
+                <p class="hide">My Cart</p></a></div>
             
         </div>
         </div>
@@ -186,7 +188,8 @@ ini_set("display_errors",1);
         </div>
         </div>
         <ul id="user_menu" style="display:none">
-            <li><a href="../torta_da_te/my_cart.php">My Cart</a></li>
+            <li><a href="../torta_da_te/my_cart.php">My Cart</a>
+            </li>
             <li><a href="../torta_da_te/account_mywishlist.php">My Wishlist</a></li>
             <li><a href="#">My Order </a></li>
             <li><a href="../torta_da_te/logout.php">Logout</a></li>
@@ -205,13 +208,8 @@ ini_set("display_errors",1);
         </div>
         </div>
         
-        <ul id="celebration_menu" style="display:none">
-            <li><a href="#">Birthday</a></li>
-            <li><a href="#">Anniversary</a></li>
-            <li><a href="#">For Parents</a></li>
-            <li><a href="#">For Kids</a></li>
-            <li><a href="#">Wedding</a></li>
-        </ul>
+        <div id="celebration_menu" style="display:none">
+        </div>
         </div>
         
         <div class="option">
@@ -221,13 +219,8 @@ ini_set("display_errors",1);
             <p class="hide">See more</p>
         </div>
        </div>
-        <ul id="vegeterian_menu" style="display:none">
-            <li><a href="#">Birthday</a></li>
-            <li><a href="#">Anniversary</a></li>
-            <li><a href="#">For Parents</a></li>
-            <li><a href="#">For Kids</a></li>
-            <li><a href="#">Wedding</a></li>
-        </ul>
+        <div id="vegeterian_menu" style="display:none">
+        </div>
         </div>
         
         <div class="option">
@@ -237,12 +230,8 @@ ini_set("display_errors",1);
             <p class="hide">See more</p>
         </div>
         </div>
-        <ul id="accessories_menu" style="display:none">
-            <li><a href="#">Candles</a></li>
-            <li><a href="#">Flowers</a></li>
-            <li><a href="#">Balloons</a></li>
-            <li><a href="#">Drinks</a></li>
-        </ul>
+        <div id="accessories_menu" style="display:none">
+        </div>
         </div>
         <h4><a href="../torta_da_te/about_us.php">ABOUT US</a></h4>
         <h4><a href="../torta_da_te/faq.php">FAQ</a></h4>
