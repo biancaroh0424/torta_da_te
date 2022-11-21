@@ -422,6 +422,13 @@ font-weight: 700;
     gap: 8px;
     width: 100%;
 }
+
+.add_title_image{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 48%;
+}
 .add_category{
     display: flex;
     flex-direction: column;
@@ -636,7 +643,7 @@ font-weight: 700;
     padding: 8px 0;
     border-bottom: 1px solid #CCBEB8;
     align-items: center;
-    width: 50%;
+    width: 30%;
 }
 
 .total_posts{

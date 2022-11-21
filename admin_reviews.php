@@ -81,12 +81,12 @@ if($e_pageNum > $total_page){
   </div>
   <form action="" method="get">
     <fieldset>
-      <h2>FaQ</h2>
+      <h2>Reviews</h2>
     <div class="total_posts">
     <span>  
     Total : <?php echo $total; ?> posts
     </span>
-    <a href="../torta_da_te/admin_upload_faq.php" class="add_post_btn">
+    <a href="../torta_da_te/admin_upload_reviews.php" class="add_post_btn">
       <img src="../torta_da_te/images/add_ico_white.svg" alt="">
       Write a post
     </a>

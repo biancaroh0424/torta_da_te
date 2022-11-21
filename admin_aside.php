@@ -12,8 +12,8 @@
         </a>
       </div>
       <div class="dashboard_menu">
-        <a href="">
-        <img src="../torta_da_te/images/dashboard_graph.svg" alt="Stastics">
+        <a href="../torta_da_te/admin_add_product.php">
+        <img src="../torta_da_te/images/add_product.svg" alt="Add Product">
       </a>
       </div>
       <div class="dashboard_menu">
@@ -32,8 +32,8 @@
       </a>
       </div>
       <div class="dashboard_menu">
-        <a href="../torta_da_te/admin_1to1_qna.php">
-        <img src="../torta_da_te/images/post.svg" alt="Posts">
+        <a href="../torta_da_te/admin_faq.php">
+        <img src="../torta_da_te/images/add_image_file.svg" alt="Posts">
       </a>
       </div>
       </div>

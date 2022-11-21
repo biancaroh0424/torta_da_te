@@ -1,9 +1,8 @@
-
 <?php
-
 error_reporting(E_ALL);
 ini_set("display_errors",1);
-include "../torta_da_te/inc/session.php";
+require "../torta_da_te/product_config.php";
+require "../torta_da_te/inc/dbcon.php";
 ?>
 
 <!DOCTYPE html>
@@ -20,133 +19,145 @@ include "../torta_da_te/inc/session.php";
     
     <title>1Hour Click & Collect</title>
 
+
 </head>
 <body>
 <?php include "../torta_da_te/inc/header.php"?>
         
 
 <main id="product_main">
-    <div class="product_li_filter">
+<div class="product_li_filter">
+
+    <section class="product_filter">
+        <div class="filter_details">
+        <div>
+            <form method="post" name="1hour_filter" id="action" name="action">
+                <fieldset>
+                <legend class="hide">Simply pick and choose your customazable cake!</legend>
+                <div class="filter_details_title">Tags</div>
+
+                <ul class="input_group">
+                <?php
+                $sql = "SELECT DISTINCT tag FROM 1hour_click_collect ORDER BY tag";
+
+                $result = mysqli_query($dbcon, $sql);
+                while($row=$result->fetch_assoc()){
+                ?>
+                
+                <li class="filter_option">
+                <label>
+                <input type="checkbox" id="tag" class="product_check" value="<?= $row['tag']; ?>"> 
+                <?= $row['tag'];?>
+                </label>
+                </li>
+                <?php }; ?>
+                </ul>
+                
+                
+                <!-- <div class="filter_details_title">Size</div>
+                <ul class="input_group">
+                <?php
+                $sql = "SELECT DISTINCT size FROM 1hour_click_collect ORDER BY size";
+
+                $result = mysqli_query($dbcon, $sql);
+                while($row=$result->fetch_assoc()){
+                ?>
+                
+                <li class="filter_option">
+                <label>
+                <input type="checkbox" id="size" class="product_check" value="<?= $row['size']; ?>">
+                <?= $row['size']; ?>
+                </label>
+                </li>
+                <?php };?>
+                </ul> -->
+                
+
+                <div class="filter_details_title">Flavor</div>
+                <ul class="input_group">
+                <?php
+                $sql = "SELECT DISTINCT flavor FROM 1hour_click_collect ORDER BY flavor";
+
+                $result = mysqli_query($dbcon, $sql);
+                while($row=$result->fetch_assoc()){
+                ?>
+                
+                <li class="filter_option">
+                <label>
+                <input type="checkbox" id="flavor" class="product_check" value="<?= $row['flavor']; ?>">
+                <?= $row['flavor']; ?>
+                </label>
+                </li>
+                <?php };?>
+                </ul>
+                
+                <div class="filter_details_title">Price</div>
+                <ul class="input_group">
+                <?php
+                $sql = "SELECT DISTINCT price_group FROM 1hour_click_collect ORDER BY price_group";
+
+                $result = mysqli_query($dbcon, $sql);
+                while($row=$result->fetch_assoc()){
+                ?>
+                
+                <li class="filter_option">
+                <label>
+                <input type="checkbox" id="price_group" class="product_check" value="<?= $row['price_group']; ?>">
+                <?= $row['price_group']; ?>
+                </label>
+                </li>
+                <?php };?>
+                </ul>
+                </div>
+                </div>
+                </fieldset>
+                </form>
+    </section>
+
     <section class="product_cele_list">
     <div class="product_title_desc">
     <h3>1 Hour Click & Collect</h3>
     <p>Get the party started with Torta Da Te! Click and collect cake service. Having an fresh organic ingredients such as dough, fresh cream, celebration cake! You simply click and order your chosen Torta Da Te cake online and it will be ready for you to collect in store within the hour (selected cakes only).</p>
     </div>
     <div class="cardlist_col">
-        <ul class="cardlist">
+        <ul class="cardlist_row" id="result">
+            <?php
+                $sql = "SELECT * FROM 1hour_click_collect";
+                $result = mysqli_query($dbcon, $sql);
+                while($row=$result->fetch_assoc()){
+            ?>
             <li class="product_card">
-                <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div></a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
+            <a href="../torta_da_te/order_process.php">
+                <div class="card_img">
+                    <img src="<?= $row['image'];?>">
+                </div>
+            </a>
+                
+            <div class="card_details">        
+            <div class="card_title">
+                <?= $row['cake_name'];?>
             </div>
             <div class="price_tag">
             <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
+            <span class="price_value">
+                <?= $row['price_group'];?>
+            </span>
             </div>
             <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
+            <span class="size">
+                <?= $row['size'];?>
+            </span>
             </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
+            </div>
+            <div class="pickup">
+                Free Pickup
+            </div>
             <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-
-            
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            
-            </div>
-
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-        </ul>
-
-
-
-        <ul class="cardlist">
-            <li class="product_card">
-                <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
+                <a href="../torta_da_te/order_process.php">
+                    <span class="card_order_btn">
+                        Customize Cake
+                    </span>
                 </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
 
             
             <div class="card_order_btn_active">
@@ -156,278 +167,66 @@ include "../torta_da_te/inc/session.php";
                 
             </div>
             
-            </div>
 
             </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
+            <div class="wishlist">
+                <div class="hide">Add to Wishlist</div>
+            </div>
             </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        
-                    <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
+            <?php };?>
         </ul>
-        <ul class="cardlist">
-            <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
+        <!-- <?php
+            // $i--;
+            //     };
+        ?> -->
 
-            
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te//images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            
-            </div>
-
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_teimages/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-    
-        <li class="product_card">
-            <a href="../torta_da_te/order_process.html">
-                <div class="card_img1">
-                </div>
-            </a>
-                <div class="card_details">        <div class="card_title">
-            White cream with raspberry chocolate and fresh mint
-            </div>
-            <div class="price_tag">
-            <div class="card_price">
-            <span class="price_title">From</span> <span class="price_value">$45.00 ~ 80.00</span>
-            </div>
-            <div class="card_tag">
-            <span class="hide">For</span> <span class="tag">Birthday</span><span class="tag">Family</span><span class="tag">Parents</span>
-            </div>
-        </div>
-            <div class="pickup">Free Pickup</div>
-            <a href="../torta_da_te/order_process.html"><span class="card_order_btn">Customize Cake</span></a>
-            <div class="card_order_btn_active">
-                <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
-                <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
-                
-            </div>
-            </div>
-            <div class="wishlist"><div class="hide">Add to Wishlist</div></div>
-            </li>
-        </ul>
-    
-    
-        <div class="pagination_arrow">
-            <a href="#"><img src="../torta_da_te/images/arrow_xs_left.png" alt="go to previous page"></a>
-            <div class="pagination">
-            <a href="#_none" class="pagination_active">1</a>
-            <a href="#_none">2</a>
-            <a href="#_none">3</a>
-            <a href="#_none">4</a>
-            <a href="#_none">...</a>
-            <a href="#_none">10</a>
-            </div>
-            <a href="#"><img src="../torta_da_te/images/arrow_xs_right.png" alt="go to next page"></a>
-        </div>
-    
-    </div>
-
-    </section>
-
-    <section class="product_filter">
-        <h3 class="hide">Simply pick and choose your customazable cake!</h3>
-        <div class="filter_details">
-        <fieldset>
-        <form action="" method="get" name="product_filter">
-                <div class="filter_details_title">Categories</div>
-
-                <div class="input_group">
-
-                <div class="filter_option">
-                <input type="checkbox" name="birthday" id="birthday"> <label for="birthday">Birthday</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="anniversary" id="anniversary"> <label for="anniversary">Anniversary</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="for_parents" id="for_parents"> <label for="for_parents">For Parents</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="for_kids" id="for_kids"> <label for="for_kids">For Kids</label></div>
-                <div class="filter_option">
-                <input type="checkbox" name="wedding" id="wedding"> <label for="wedding">Wedding</label></div>
-                </div>
-
-
-                <div class="filter_details_title">Servings</div>
-                <div class="input_group">
-                
-                <div class="filter_option">
-                <input type="checkbox" name="6_inch_12servings" id="6_inch_12servings"> <label for="6_inch_12servings">12 Servings</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="8_inch_16sercings" id="8_inch_16sercings"> <label for="8_inch_16sercings">16 Servings</label>
-                </div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="10_inch_24servings" id="10_inch_24servings"> <label for="10_inch_24servings">24 Servings</label>
-                </div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="12_inch_32servings" id="12_inch_32servings"> <label for="12_inch_32servings">32 Servings</label>
-                </div>
-                </div>
-
-
-
-                <div class="filter_details_title">flavor</div>
-                <div class="input_group">
-
-                <div class="filter_option">
-                <input type="checkbox" name="white" id="white"> <label for="white">White</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="chocolate" id="chocolate"> <label for="chocolate">Chocolate</label></div>
-
-                <div class="filter_option">
-                <input type="checkbox" name="white_choco" id="white_choco"> <label for="white_choco">White +  Cholocate</label>
-                </div>
-                </div>
-
-                <div class="filter_details_title">Price</div>
-                <div class="input_group">
-
-                <div class="filter_option">
-                <input type="radio" name="price" value="20_40" id="20_40"> <label for="20_40">From $20.00 ~ To $40.00</label></div>
-
-                <div class="filter_option">
-                <input type="radio" name="price" id="40_60"> <label for="40_60">From $40.00 ~ To $60.00</label>
-                </div>
-
-                <div class="filter_option">
-                <input type="radio" name="price" value="60_80" id="60_80"> <label for="60_80">From $60.00 ~ To $80.00</label>
-                </div>
-                <div class="filter_option">
-                <input type="radio" name="price" value="80_100" id="80_100"> <label for="80_100">From $80.00 ~ To $100.00</label>
-                </div>
-                <div class="filter_option">
-                <input type="radio" name="price" value="100_" id="100_"> <label for="100_">Over $100.00 ~ </label>
-                </div>
-                </div>
-            
-
-            <button class="hide" type="submit">Search Cake</button>
-        </form>
-    </fieldset>
-        </div>
     </section>
 </div>
+
+
 </main>
 
 <?php include "../torta_da_te/inc/footer.html"?>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <script src="../torta_da_te/js/product_celebration.js"></script>
     <script src="../torta_da_te/js/navbar.js"></script>
     <script src="../torta_da_te/js/product_filter.js"></script>
-    
 
+<script>
+
+$(document).ready(function(){
+
+    $(".product_check").click(function(){
+        var action = 'data';
+        var tag = get_filter_text('tag');
+        var size = get_filter_text('size');
+        var flavor = get_filter_text('flavor');
+        var price_group = get_filter_text('price_group');
+
+        $.ajax({
+            url:'../torta_da_te/action_product_1hour.php',
+            type: 'POST',
+            data: { action: action, tag: tag, size: size, flavor: flavor, price_group: price_group},
+            success: function(response){
+                $("#result").html(response);
+            }
+        });
+
+    });
+
+    function get_filter_text(text_id){
+        var filterData = [];
+        $('#'+text_id+':checked').each(function(){
+            filterData.push($(this).val());
+        });
+        return filterData;
+    }
+ 
+});
+
+
+</script>
 </body>
 </html>
+

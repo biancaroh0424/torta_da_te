@@ -205,13 +205,14 @@ gap: 8px;
     justify-content:flex-start;
     align-items: center;
 }
-.admin_note textarea,.add_title textarea{
+.admin_note textarea,.add_title textarea,.add_title_image textarea{
     padding: 16px;
     border: 1px solid #ccbeb8;
     border-radius: 8px;
     font-family: inherit;
     resize: none;
     font-size: 13px;
+    height: 236px;
 }
 .admin_note textarea:focus,.add_title textarea:focus{
     outline: none;
@@ -331,6 +332,16 @@ font-weight: normal;
     gap: 8px;
 }
 
+
+.add_category_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.add_category_bottom div{
+    margin-right: 24px;
+}
 .post_type{
     
     width: 440px;
@@ -355,7 +366,6 @@ font-weight: normal;
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    gap: 24px;
 }
 .category_column:last-child{
     display: flex;

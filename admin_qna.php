@@ -24,13 +24,18 @@
   <div class="board_column_layout">
   <div class="sub_menu_board">
     <div>
-    <a href="">
+    <a href="../torta_da_te/admin_faq.php">
     <h3>FaQ</h3>
     </a>
     </div>
     <div>
-    <a href="">
+    <a href="../torta_da_te/admin_qna.php">
     <h3>1:1 QnA</h3>
+    </a>
+    </div>
+    <div>
+    <a href="../torta_da_te/admin_reviews.php">
+    <h3>Reviews</h3>
     </a>
     </div>
   </div>
