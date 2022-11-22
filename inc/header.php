@@ -99,7 +99,7 @@ require "dbcon.php";
                 <?php };?>
             
                 <div><a href="../torta_da_te/my_cart.php"><img src="../torta_da_te/images/cart_nav.svg" alt="">
-                <div class="mycart_state"><span id="cart_item">1</span></div>
+                <div class="mycart_state" style="display:none"><span id="cart_item"></span></div>
                 <p class="hide">My Cart</p></a></div>
             
         </div>

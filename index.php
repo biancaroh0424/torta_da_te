@@ -275,17 +275,31 @@ include "../torta_da_te/inc/header.php";
                 Free Pickup
             </div>
             <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.php">
+
+            <form action="" class="form_submit">
+              <input type="hidden" class="one_idx" value="<?= $row_one_hour['idx'];?>">
+
+              <input type="hidden" class="one_name" value="<?= $row_one_hour['cake_name'];?>">
+
+              <input type="hidden" class="one_price" value="<?= $row_one_hour['price'];?>">
+
+              <input type="hidden" class="one_code" value="<?= $row_one_hour['product_code'];?>">
+
+              <button style="background: transparent; border: none;">
+                <span class="card_order_btn">Customize Cake</span>
+              </button>
+          </form>
+                <!-- <a href="../torta_da_te/order_process.php">
                     <span class="card_order_btn">
                         Customize Cake
                     </span>
-                </a>
+                </a> -->
 
             
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             
@@ -346,17 +360,32 @@ include "../torta_da_te/inc/header.php";
                 Free Pickup
             </div>
             <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.php">
+
+            <form action="" class="form_submit">
+              <input type="hidden" class="one_idx" value="<?= $row_one_hour['idx'];?>">
+
+              <input type="hidden" class="one_name" value="<?= $row_one_hour['cake_name'];?>">
+
+              <input type="hidden" class="one_price" value="<?= $row_one_hour['price'];?>">
+
+              <input type="hidden" class="one_code" value="<?= $row_one_hour['product_code'];?>">
+
+              <button style="background: transparent; border: none;">
+                <span class="card_order_btn">Customize Cake</span>
+              </button>
+          </form>
+
+                <!-- <a href="../torta_da_te/order_process.php">
                     <span class="card_order_btn">
                         Customize Cake
                     </span>
-                </a>
+                </a> -->
 
             
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             
@@ -418,17 +447,31 @@ include "../torta_da_te/inc/header.php";
                 Free Pickup
             </div>
             <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.php">
+
+            <form action="" class="form_submit">
+              <input type="hidden" class="one_idx" value="<?= $row_vegeterian['idx'];?>">
+
+              <input type="hidden" class="one_name" value="<?= $row_vegeterian['cake_name'];?>">
+
+              <input type="hidden" class="one_price" value="<?= $row_vegeterian['price'];?>">
+
+              <input type="hidden" class="one_code" value="<?= $row_vegeterian['product_code'];?>">
+
+              <button style="background: transparent; border: none;">
+                <span class="card_order_btn">Customize Cake</span>
+              </button>
+            </form>
+                <!-- <a href="../torta_da_te/order_process.php">
                     <span class="card_order_btn">
                         Customize Cake
                     </span>
-                </a>
+                </a> -->
 
             
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             
@@ -463,13 +506,14 @@ include "../torta_da_te/inc/header.php";
       <div class="swiper-slide">
        
       <div class="product_card">
-            <a href="../torta_da_te/order_process.php">
-                <div class="card_img">
-                    <img src="<?= $row_accessories['image'];?>">
+            <!-- <a href="../torta_da_te/order_process.php"> -->
+                <div class="card_img1">
+                    <img class="card_img1" src="<?= $row_accessories['image'];?>">
                 </div>
-            </a>
+            <!-- </a> -->
                 
             <div class="card_details">
+                
             <div class="card_tag">
             <span class="tag">
                 <?= $row_accessories['tag'];?>
@@ -481,31 +525,49 @@ include "../torta_da_te/inc/header.php";
             <div class="price_tag">
             <div class="card_price">
             <span class="price_value">
-                <?= $row_accessories['price'];?>
+                $ <?= number_format($row_accessories['price'],2);?>
             </span>
             </div>
             </div>
             <div class="pickup">
                 Free Pickup
             </div>
-            <div class="order_btn_wrapper">
-                <a href="../torta_da_te/order_process.php">
-                <span class="add_to_bag_btn">Add to bag<img src="..torta_da_te/images/add_ico.png" alt=""></span>
-                </a>
+          <div class="order_btn_wrapper">
+          <form name="form_submit1" class="form_submit1" method="post" action="../torta_da_te/action_order.php">
+              <input type="hidden" class="acc_idx" name="acc_idx" value="<?= $row_accessories['idx'];?>">
+
+              <input type="hidden" class="acc_name" name="acc_name" value="<?= $row_accessories['acc_name'];?>">
+
+              <input type="hidden" class="acc_image" 
+              name="acc_image"
+              value="<?= $row_accessories['image'];?>">
+
+              <input type="hidden" class="acc_tag" name="acc_tag"
+              value="<?= $row_accessories['tag'];?>">
+
+              <input type="hidden" class="acc_price" name="acc_price" value="<?= $row_accessories['price'];?>">
+
+              <input type="hidden" class="acc_code" name="acc_code" value="<?= $row_accessories['product_code'];?>">
+
+              <button style="background: transparent; border: none;" class="add_item_btn">
+                <span class="add_to_bag_btn">Add to bag<img src="../torta_da_te/images/add_ico.svg" alt=""></span>
+              </button>
+          </form>
+                
 
             
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             
 
-            </div>
-            <div class="wishlist">
+          </div>
+          <div class="wishlist">
                 <div class="hide">Add to Wishlist</div>
-            </div>
+          </div>
     </div>
         
       </div>
@@ -732,19 +794,53 @@ include "../torta_da_te/inc/header.php";
 </main>
 
 <?php include "../torta_da_te/inc/footer.html"?>
-
-
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    
+
 <script src="../torta_da_te/js/navbar.js"></script>
+
 <script src="../torta_da_te/js/accslider.js"></script>
 <script src="../torta_da_te/js/product_celebration.js"></script>
 <script src="../torta_da_te/js/navmyaccount.js"></script>
 
 
+<script>
+  $(document).ready(function() {
+    $(".add_item_btn").click(function(e){
+      e.preventDefault();
+      var $form = $(this).closest(".form_submit1");
+      var acc_idx = $form.find(".acc_idx").val();
+      var acc_image = $form.find(".acc_image").val();
+      var acc_tag = $form.find(".acc_tag").val();
+      var acc_name = $form.find(".acc_name").val();
+      var acc_price = $form.find(".acc_price").val();
+      var acc_code = $form.find(".acc_code").val();
 
-    
+      $.ajax({
+        url:'../torta_da_te/action_order.php',
+        method: 'post', 
+        data : {acc_idx:acc_idx, acc_image:acc_image, acc_tag:acc_tag, acc_name:acc_name, acc_price: acc_price, acc_code:acc_code},
+        success: function(response){
+          $('.mycart_state').css("display","flex");
+          load_cart_item_number();
+        }
+      });
+    });
+    load_cart_item_number();
+
+    function load_cart_item_number(){
+      $.ajax({
+        url: '../torta_da_te/action_order.php',
+        method: 'get',
+        data: {cart_item: "cart_item"},
+        success: function(response){
+          $('#cart_item').html(response);
+        }
+      })
+    }
+  });
+</script>
+  
 </body>
 </html>

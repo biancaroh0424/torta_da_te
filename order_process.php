@@ -956,7 +956,6 @@ ini_set("display_errors",1);
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-
     <script src="../torta_da_te/js/product_celebration.js"></script>
     <script src="../torta_da_te/js/navbar.js"></script>
     <script src="../torta_da_te/js/orderprocess1.js"></script>

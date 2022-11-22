@@ -167,13 +167,14 @@ justify-content: center;
     box-sizing: border-box;
     width: 480px;
     font-size: 15px;
-    color: #fff;
+    color: #28231f;
     font-weight: 700;
     border: 2px solid #fff;
     border-radius: 100px;
     padding: 16px;
     /* background-color: #28231F; */
 }
+
 #user_name, #user_email::placeholder{
     font-weight: 700;
     font-size: 15px;

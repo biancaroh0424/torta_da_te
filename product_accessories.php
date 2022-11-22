@@ -64,7 +64,7 @@ require "../torta_da_te/inc/dbcon.php";
                 <li class="filter_option">
                 <label>
                 <input type="checkbox" id="price" class="product_check" value="<?= $row['price']; ?>">
-                <?= $row['price']; ?>
+                $ <?= number_format($row['price'],2);?>
                 </label>
                 </li>
                 <?php };?>
@@ -106,7 +106,7 @@ require "../torta_da_te/inc/dbcon.php";
             <div class="price_tag">
             <div class="card_price">
             <span class="price_value">
-                <?= $row['price'];?>
+            $ <?= number_format($row['price'],2);?>
             </span>
             </div>
             </div>
@@ -115,14 +115,14 @@ require "../torta_da_te/inc/dbcon.php";
             </div>
             <div class="order_btn_wrapper">
                 <a href="../torta_da_te/order_process.php">
-                <span class="add_to_bag_btn">Add to bag<img src="..torta_da_te/images/add_ico.png" alt=""></span>
+                <span class="add_to_bag_btn">Add to bag<img src="../torta_da_te/images/add_ico.svg" alt=""></span>
                 </a>
 
             
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             

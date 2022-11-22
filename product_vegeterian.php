@@ -162,7 +162,7 @@ require "../torta_da_te/inc/dbcon.php";
             <div class="card_order_btn_active">
                 <img src="../torta_da_te/images/subtract_ico.png" alt="" class="subtract_product">
                 <span class="counter_card_order_btn_active">1</span>
-                <img src="../torta_da_te/images/add_ico_white.png" class="add_product" alt="">
+                <img src="../torta_da_te/images/add_ico_white.svg" class="add_product" alt="">
                 
             </div>
             
